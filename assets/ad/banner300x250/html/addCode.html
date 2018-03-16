@@ -1,0 +1,49 @@
+<div id="ad-300x250" class="ad"></div>
+<script>
+	
+	jQuery(document).ready(function($) {
+		$( "#ad-300x250" ).load("/nerdignorante/wp-content/themes/niknights/assets/ad/banner300x250/html/ad-300x250.html", function( response, status, xhr ) {
+			debugger;
+			if ( status == "error" ) {
+				var msg = "Sorry but there was an error: ";
+				$("#ad-300x250").html( msg + xhr.status + " " + xhr.statusText );
+			}
+		});
+	});		
+</script>
+
+
+
+
+
+<div id="ad-300x600" class="ad"></div>
+<script>
+	
+	jQuery(document).ready(function($) {
+		$( "#ad-300x600" ).load("/nerdignorante/wp-content/themes/niknights/assets/ad/banner300x600/html/ad-300x600.html", function( response, status, xhr ) {
+			debugger;
+			if ( status == "error" ) {
+				var msg = "Sorry but there was an error: ";
+				$("#ad-300x600").html( msg + xhr.status + " " + xhr.statusText );
+			}
+		});
+	});		
+</script>
+
+
+
+
+
+<div id="ad-728x90" class="ad"></div>
+<script>
+	
+	jQuery(document).ready(function($) {
+		$( "#ad-728x90" ).load("/nerdignorante/wp-content/themes/niknights/assets/ad/superbanner728x90/html/ad-728x90.html", function( response, status, xhr ) {
+			debugger;
+			if ( status == "error" ) {
+				var msg = "Sorry but there was an error: ";
+				$("#ad-728x90").html( msg + xhr.status + " " + xhr.statusText );
+			}
+		});
+	});		
+</script>

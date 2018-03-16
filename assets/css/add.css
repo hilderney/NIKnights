@@ -1,0 +1,23 @@
+#superbanner {
+	width: 728px;
+    height: 90px;
+	/* margin: 10px auto ; */
+    background: darkgoldenrod;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.widget div{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.widget .textwidget {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.widget ul li{
+	text-align: left;
+}
