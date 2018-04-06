@@ -1,8 +1,16 @@
-<?php get_header(); ?>
+<?php 
+get_header();
+
+$name = get_the_category()[0]->name;
+if ($name == 'Destaque') :
+	$name = get_the_category()[1]->name;
+endif;
+?>
+<script> console.log('category.php'); </script>
 
 <div class=" main-container container">
 	<div class="row">
-		<h1>Artigos na categoria <span class="title"><?php print(get_the_category()[0]->name); ?></span></h1>
+		<h1>Artigos na categoria <span class="title"><?php print($name); ?></span></h1>
 	</div>
 	<div class="row">
 
@@ -23,6 +31,8 @@
 			<?php get_sidebar(); ?>		
 			
 		</section> <!-- end main sidebar -->
+	</div>
 </div>
 
+<div class="clear"></div>
 <?php get_footer(); ?>

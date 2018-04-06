@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
+<script> console.log('archive.php'); </script>
+
 <div class=" main-container container">
 	<div class="row">
-		<h1>Arquivo por <span class="title"><?php print_r(get_the_author()); ?></span></h1>
+		<div class="col">
+			<h1>Arquivo por <span class="title"><?php print_r(get_the_author()); ?></span></h1>
+		</div>
 	</div>
 
 	<div class="row">
@@ -24,6 +28,9 @@
 			<?php get_sidebar(); ?>		
 			
 		</section> <!-- end main sidebar -->
+	</div>
 </div>
+
+<div class="clear"></div>
 
 <?php get_footer(); ?>

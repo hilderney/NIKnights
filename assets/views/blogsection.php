@@ -33,14 +33,6 @@
 								</a>
 							</span>
 							<div class="post-content">
-								
-								<?php /* if (has_excerpt() ): ?>
-									<?php the_excerpt(); ?>
-									<span>Leia Mais...</span>
-								<?php else : ?>
-									<?php the_content(' - Leia mais...') ?>
-								<?php endif; */ ?>
-
 								<div class="author-widget">
 									<div class="author">
 										<div class="row">

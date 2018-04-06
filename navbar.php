@@ -7,10 +7,6 @@
       <img id="site-brand" src="<?php echo get_site_url(null, '/wp-content/themes/niknights/', 'http'); ?>assets/brand/NI_ICON.png" class="header-logo" alt="">
     </a>
   </div>
-  
-  <!-- <a class="navbar-brand" href="<?php //bloginfo( 'url' ); ?>" title="<?php //bloginfo('name'); ?>">
-    <?php //echo bloginfo('name'); ?>
-  </a> -->
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -18,6 +14,11 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+      <li>
+        <a class="navbar-brand-name" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo('name'); ?>">
+          <?php echo bloginfo('name'); ?>
+        </a>
+      </li>
       <?php
       wp_nav_menu( array(
         'theme_location'  => 'header-menu',

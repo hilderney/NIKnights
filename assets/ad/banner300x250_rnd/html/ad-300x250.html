@@ -1,0 +1,9 @@
+<div id="ad-nik-img-300x250_rnd"></div>
+<script>
+	var baseUrl = window.location.protocol + "//" +  window.location.host + "/" +  window.location.pathname.split('/')[0];
+    var url = '';
+    (baseUrl.indexOf('localhost') > 0) ? url = baseUrl + window.location.pathname.split('/')[1] : url = baseUrl;
+	jQuery(document).ready(function($) {
+		$('#ad-nik-img-300x250_rnd').html('<img src="' + url + '/wp-content/themes/niknights/assets/ad/banner300x250_rnd/img/adSample300x250.jpg" alt="' + '' + '">');
+	});			
+</script>

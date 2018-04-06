@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<script> console.log('page-contato.php'); </script>
+
 <h1>CONTATO</h1>
 
 <div class=" main-container container">
@@ -22,7 +24,8 @@
 			<?php get_sidebar(); ?>		
 			
 		</section> <!-- end main sidebar -->
+	</div>
 </div>
 
-
+<div class="clear"></div>
 <?php get_footer(); ?>

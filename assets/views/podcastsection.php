@@ -2,7 +2,7 @@
 
 //$podcast_id = get_category_by_slug('podcast')->term_id;
 if(is_front_page())
-	$posts_per_page = 4;
+	$posts_per_page = 3;
 else
 	$posts_per_page = 10;
 $args = array(

@@ -19,7 +19,7 @@ if ( $featuredPosts->have_posts() ) :
 		
 		<div class="row">
 
-			<div class="col">
+			<div class="col single-featured-post">
 				<div class="single-featured-post post post-<?php the_ID(); ?>">
 					<a href="<?php the_permalink(); ?>">
 						<div class="single-featured-image">
@@ -36,18 +36,6 @@ if ( $featuredPosts->have_posts() ) :
 									background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
 								}
 								<?php endif; ?>
-
-								<?php 
-								/* 
-								if(get_the_post_thumbnail()) : 
-									echo '.post-' . the_ID() . '.single-featured-image { background-image: url(' . the_post_thumbnail_url() . '); }';
-								else :
-									echo '.post-' . the_ID() . '.single-featured-image { background-image: url(' .  bloginfo('template_url') . '/assets/images/postbackgroundsample.jpg); }';
-								endif; 
-								 */
-								?>
-
-
 							</style>
 						</div>
 					</a>
@@ -71,16 +59,19 @@ if ( $featuredPosts->have_posts() ) :
 			</div>
 			<div class="col">
 
-				<div class="featured-ad-wrapper">
+				<div id="superbanner_holder" class="featured-ad-wrapper">
 					<div class="row">
 
-						<div class="col">
+						<div class="col ad-superbanner-featured">
 							<div id="superbanner" class="ad-superbanner-featured">
 								<!-- <img src="<?php //bloginfo('template_url') ?>/assets/ad/superbanner728x90/superbanner_welcome.jpg" alt=""> -->
 								<div id="ad-728x90" class="ad"></div>
 								<script>
+									var baseUrl = window.location.protocol + "//" +  window.location.host + "/" +  window.location.pathname.split('/')[0];
+								    var url = '';
+								    (baseUrl.indexOf('localhost') > 0) ? url = baseUrl + window.location.pathname.split('/')[1] : url = baseUrl;
 									jQuery(document).ready(function($) {
-										$( "#ad-728x90" ).load("/nerdignorante/wp-content/themes/niknights/assets/ad/superbanner728x90/html/ad-728x90.html", function( response, status, xhr ) {
+										$( "#ad-728x90" ).load( url + "/wp-content/themes/niknights/assets/ad/superbanner728x90/html/ad-728x90.html", function( response, status, xhr ) {
 											//debugger;
 											if ( status == "error" ) {
 												var msg = "Sorry but there was an error: ";

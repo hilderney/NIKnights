@@ -1,9 +1,9 @@
 <?php 	
-$podcast_cat_id = get_category_by_slug('podcast')->term_id;
+$podcast_cat_id = get_category_by_slug('destaque')->term_id;
 $args = array(
 	'type'				=> 'post'
-	, 'posts_per_page'	=> 3
-	, 'category_in' => array($podcast_cat_id)
+	, 'posts_per_page'	=> 4
+	, 'cat' 			=> get_category_by_slug('podcast')->term_id
 );
 
 $featuredPosts = new WP_Query($args);
@@ -16,7 +16,7 @@ if ( $featuredPosts->have_posts() ) :
 	<div class="section-title hide">
 		<h2>Header Featured </h2>
 	</div>	
-		
+		asdfasdf
 		<div class="row">
 
 			<div class="col">

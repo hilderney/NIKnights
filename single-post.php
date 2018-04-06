@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<script> console.log('single-post.php'); </script>
 
 <div class=" main-container container">
 	<div class="row">
@@ -21,6 +22,8 @@
 			<?php get_sidebar(); ?>		
 			
 		</section> <!-- end main sidebar -->
+	</div>
 </div>
 
+<div class="clear"></div>
 <?php get_footer(); ?>

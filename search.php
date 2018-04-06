@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>SEARCH</h1>
+<script> console.log('search.php'); </script>
 
 <div class=" main-container container">
 	<div class="row">
@@ -22,6 +22,8 @@
 			<?php get_sidebar(); ?>		
 			
 		</section> <!-- end main sidebar -->
+	</div>
 </div>
 
+<div class="clear"></div>
 <?php get_footer(); ?>

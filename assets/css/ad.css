@@ -2,7 +2,7 @@
 	width: 728px;
     height: 90px;
 	/* margin: 10px auto ; */
-    background: darkgoldenrod;
+    background: rgba(0,0,0,0.1);
     border-radius: 5px;
     overflow: hidden;
 }

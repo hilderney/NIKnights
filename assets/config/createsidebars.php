@@ -1,4 +1,5 @@
 <?php 
+
 function nik_widget_setup(){
 	
 		$sidebar1 = array(

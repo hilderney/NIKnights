@@ -14,13 +14,9 @@
 <body <?php body_class(); ?> >
 <header>
 	<?php include('navbar.php'); ?>
-	
 	<section id="head-ad"></section>
-	
-</div>
 </header>
 <div class="main-wrapper">
-
 	<?php if(is_front_page()): ?>
 		<section id="carousel-section">
 			<?php include(get_template_directory().'/assets/views/carousel.php'); ?>
