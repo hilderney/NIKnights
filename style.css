@@ -1,13 +1,24 @@
 /*
 Theme Name: NI Knights
 Theme URI: http://nerdignorante.com.br
-Description: Site criado para o Nerd Ignorante 
 Author: Hilderney Zapf
 Author URI: http://nerdignorante.com.br
-Version: 1.0
+Description: Site criado para o Nerd Ignorante 
+Version: 0.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, two-columns, right-sidebar, custom-menu, featured-images, post-formats, podcast
+Text Domain: NIKnights
+
+
 */
-html.wp-admin{
+
+
+html.wp-toolbar{
     background-color: #fff;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
 }
 body.wp-admin{
     background-color: #fff;
@@ -19,4 +30,12 @@ body.wp-admin a:visited,
 body.wp-admin a:hover, 
 body.wp-admin a:focus {
 	font-size: initial;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
 }

@@ -1,139 +1,194 @@
-/*	=====================================================
-		GENERAL FUNCTIONS
-	===================================================== */
-html{
+/*  =====================================================
+        GENERAL FUNCTIONS
+    ===================================================== */
+
+html.nik html {
     background-color: #3A3C45;
 }
-body{
-	background-color: #3A3C45;
+
+html.nik body {
+    background-color: #3A3C45;
     color: #e3e4e6;
     /* background-repeat: no-repeat; 
     font-family: 'arial'; */
 }
-html.wp-admin{
-    background-color: #fff;
+
+html.nik body.admin-bar {
+    margin-top: 32px !important;
 }
-body.wp-admin{
-    background-color: #fff;
-    color: #000;
+
+html.nik body.admin-bar nav.navbar {
+    top: 32px !important;
 }
-div#wpadminbar {
+
+html.nik div#wpadminbar {
     display: block;
 }
-a, a:visited, a:hover, a:focus{
+
+html.nik a,
+html.nik a:visited,
+html.nik a:hover,
+html.nik a:focus {
     text-decoration: none;
     color: inherit;
 }
-.blog a, .blog a:visited, .blog a:hover, .blog a:focus{
-    text-decoration: none;
-    color: #e3e4e6;
-}
-.archive a, .archive a:visited, .archive a:hover, .archive a:focus{
+
+html.nik .blog a,
+html.nik .blog a:visited,
+html.nik .blog a:hover,
+html.nik .blog a:focus {
     text-decoration: none;
     color: #e3e4e6;
 }
 
-.home a, .home a:visited, .home a:hover, .home a:focus{
+html.nik .archive a,
+html.nik .archive a:visited,
+html.nik .archive a:hover,
+html.nik .archive a:focus {
     text-decoration: none;
     color: #e3e4e6;
 }
 
-.page a, .page a:visited, .page a:hover, .page a:focus{
+html.nik .home a,
+html.nik .home a:visited,
+html.nik .home a:hover,
+html.nik .home a:focus {
+    text-decoration: none;
+    color: #e3e4e6;
+}
+
+html.nik .page a,
+html.nik .page a:visited,
+html.nik .page a:hover,
+html.nik .page a:focus {
     text-decoration: none;
     color: #e3e4e6;
     box-shadow: none;
 }
-.single a, .single a:visited, .single a:hover, .single a:focus{
+
+html.nik .single a,
+html.nik .single a:visited,
+html.nik .single a:hover,
+html.nik .single a:focus {
     text-decoration: none;
     color: #e3e4e6;
     box-shadow: none;
 }
-button, .btn, input[type=button]{
+
+html.nik button,
+html.nik .btn,
+html.nik input[type=button] {
     background-color: transparent;
     box-shadow: none;
 }
-button:focus, .btn:focus, input[type=button]:focus{
+
+html.nik button:focus,
+html.nik .btn:focus,
+html.nik input[type=button]:focus {
     background-color: transparent;
     box-shadow: none;
 }
-button.selected:focus, .btn.selected:focus, input[type=button].selected:focus{
+
+html.nik button.selected:focus,
+html.nik .btn.selected:focus,
+html.nik input[type=button].selected:focus {
     background-color: transparent;
-    box-shadow: 0 0 0 0.2rem rgba(250, 175, 15,0.15);
+    box-shadow: 0 0 0 0.2rem rgba(250, 175, 15, 0.15);
 }
-.hide{
+
+html.nik .hide {
     display: none;
-	opacity: 0.25;
+    opacity: 0.25;
 }
-.cl-white{    
+
+html.nik .cl-white {
     color: #FFFFFF;
 }
-.cl-black{    
+
+html.nik .cl-black {
     color: #000000;
 }
-.cl-dark{    
+
+html.nik .cl-dark {
     color: #303044;
 }
-.cl-danger{
-    color: #DD2233;   
-}
-.cl-primary{
-    color: #4466AA;   
-}
-.cl-title{
-    color: #DDAA15;   
-}
-.cl-light{
-    color: #E3E4E6  ;
-}
-.bg-white{    
-    background-color:#FFFFFFF;
-}
-.bg-black{    
-    background-color:#000000;
-}
-.bg-dark{    
-    background-color:#303044;
-}
-.bg-danger{
-    background-color:#DD2233;   
-}
-.bg-primary{
-    background-color:#4466AA;   
-}
-.bg-title{
-    background-color:#DDAA15;   
-}
-.bg-light{
-    background-color: #E3E4E6  ;
+
+html.nik .cl-danger {
+    color: #DD2233;
 }
 
-h1 {
+html.nik .cl-primary {
+    color: #4466AA;
+}
+
+html.nik .cl-title {
+    color: #DDAA15;
+}
+
+html.nik .cl-light {
+    color: #E3E4E6;
+}
+
+html.nik .bg-white {
+    background-color: #FFFFFFF;
+}
+
+html.nik .bg-black {
+    background-color: #000000;
+}
+
+html.nik .bg-dark {
+    background-color: #303044;
+}
+
+html.nik .bg-danger {
+    background-color: #DD2233;
+}
+
+html.nik .bg-primary {
+    background-color: #4466AA;
+}
+
+html.nik .bg-title {
+    background-color: #DDAA15;
+}
+
+html.nik .bg-light {
+    background-color: #E3E4E6;
+}
+
+html.nik h1 {
     display: block;
     font-size: 2em;
 }
-h2 {
+
+html.nik h2 {
     display: block;
     font-size: 1.8em;
 }
-h3 {
+
+html.nik h3 {
     display: block;
     font-size: 1.6em;
 }
-h4 {
+
+html.nik h4 {
     display: block;
     font-size: 1.4em;
 }
-h5 {
+
+html.nik h5 {
     display: block;
     font-size: 0.9em;
     color: black;
 }
-h6 {
+
+html.nik h6 {
     display: block;
     font-size: 0.8em;
 }
 
-.section-title {
+html.nik .section-title {
     margin: 5px auto;
     padding: 6px 10px;
     color: #27292f;
@@ -141,79 +196,93 @@ h6 {
 }
 
 
-/*	=====================================================
-		SIDEBAR 
-	===================================================== */
-#sidebar aside {
-    background: rgba(0,0,0,0.10);
+/*  =====================================================
+        SIDEBAR 
+    ===================================================== */
+
+html.nik #sidebar aside {
+    background: rgba(0, 0, 0, 0.10);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: -1px 1px 10px -1px rgba(0, 0, 0, 0.35);
 }
-#sidebar aside:first-child{
-	margin-top: 0;
+
+html.nik #sidebar aside:first-child {
+    margin-top: 0;
 }
-#sidebar aside:last-child{
-	margin-bottom: 0;
+
+html.nik #sidebar aside:last-child {
+    margin-bottom: 0;
 }
-#sidebar .widget {
+
+html.nik #sidebar .widget {
     padding-bottom: 20px;
 }
-#sidebar .widget-title {
+
+html.nik #sidebar .widget-title {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
     color: #FAAF0F;
     font-weight: 500;
 }
-#sidebar .widget-title a{
+
+html.nik #sidebar .widget-title a {
     color: #FAAF0F;
 }
-#sidebar ul ul, #sidebar ol ol{
+
+html.nik #sidebar ul ul,
+html.nik #sidebar ol ol {
     list-style: none;
 }
-ul, ul li, ol, ol li{
-	list-style: none;
-}
-ul li, ol li {
-    background-color: transparent;
+
+html.nik ul,
+html.nik ul li,
+html.nik ol,
+html.nik ol li {
+    list-style: none;
 }
 
+html.nik ul li,
+html.nik ol li {
+    background-color: transparent;
+}
 
 
 /*  =====================================================
         HEADER
     ===================================================== */
 
-.brand-holder {
-	background-color: transparent;
+html.nik .brand-holder {
+    background-color: transparent;
 }
 
-#site-brand {
-	background-color: transparent;
+html.nik #site-brand {
+    background-color: transparent;
     height: 72px;
     width: 72px;
     position: relative;
     top: -10px;
 }
 
-.navbar-nav {
-    color:inherit;
-}
-
-.navbar-nav ul li{
-    font-weight: 100;
-}
-
-.navbar-nav a.nav-link{
+html.nik .navbar-nav {
     color: inherit;
 }
 
-.navbar ul li, .navbar ul ul li{
+html.nik .navbar-nav ul li {
+    font-weight: 100;
+}
+
+html.nik .navbar-nav a.nav-link {
+    color: inherit;
+}
+
+html.nik .navbar ul li,
+html.nik .navbar ul ul li {
     padding: 8px;
 }
 
-.navbar ul li:hover {
-    background: rgba(0,0,0,0.15);
+html.nik .navbar ul li:hover {
+    background: rgba(0, 0, 0, 0.15);
 }
 
 
@@ -221,91 +290,96 @@ ul li, ol li {
         MAIN CONTENT 
     ===================================================== */
 
-#main-content {
-	background-color: transparent;
+html.nik #main-content {
+    background-color: transparent;
     color: inherit;
 }
 
 
-/*	=====================================================
-		FOOTER
-	===================================================== */
-footer {
-	background-color: darkgray;
+/*  =====================================================
+        FOOTER
+    ===================================================== */
+
+html.nik footer {
+    background-color: darkgray;
 }
 
 
+/*  =====================================================
+        POSTS
+    ===================================================== */
 
-/*	=====================================================
-		POSTS
-	===================================================== */
-.post {
+html.nik .post {
     border-radius: 5px;
     overflow: hidden;
-    background: rgba(0,0,0,0.10);
+    background: rgba(0, 0, 0, 0.10);
     box-shadow: -1px 1px 10px -1px rgba(0, 0, 0, 0.35);
 }
 
-.post:first-child {
+html.nik .post:first-child {
     display: block;
     margin-top: 0;
 }
-.post a {
+
+html.nik .post a {
     min-height: 200px;
 }
 
-.post p {
+html.nik .post p {
     /* display:none; */
 }
 
-.post-title {
+html.nik .post-title {
     overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight:500;
+    font-weight: 500;
     color: #ffffff;
-    text-shadow: 
-        -1px 1px 0px rgba(0, 0, 0, 0.7),
-        -2px 2px 2px rgba(0, 0, 0, 0.25);
-    background: linear-gradient( 
-       rgba(0, 0, 0, 0.5) ,
-       rgba(0, 0, 0, 0.15) ,
-       transparent
-    );
+    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.7), -2px 2px 2px rgba(0, 0, 0, 0.25);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15), transparent);
 }
-.post-content{
-    overflow: hidden;  
+
+html.nik .post-content {
+    overflow: hidden;
 }
-.post-category {
+
+html.nik .post-category {
     color: #495057;
     font-weight: 700;
     text-transform: uppercase;
     background: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));
     background: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));
+    ;
 }
-.post-category, .post-category a, .post-category a:visited, .post-category a:hover {
+
+html.nik .post-category,
+html.nik .post-category a,
+html.nik .post-category a:visited,
+html.nik .post-category a:hover {
     text-decoration: none;
     color: #FAAF0F;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
-.post .author-image {
+
+html.nik .post .author-image {
     background-size: cover;
     border-radius: 50%;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
-.post .author-name {
+
+html.nik .post .author-name {
     color: #427FB4;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.post .author-twitter {
+html.nik .post .author-twitter {
     color: #427FB4;
     font-weight: 500;
     text-transform: lowercase;
 }
 
-.post .author-quote {
+html.nik .post .author-quote {
     text-align: center;
     word-wrap: break-word;
     overflow: hidden;
@@ -313,83 +387,91 @@ footer {
     font-weight: 400;
 }
 
-.post .quote {
+html.nik .post .quote {
     background-color: #dddddd;
     border-radius: 5px;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-.post .quote::after{
+html.nik .post .quote::after {
     content: ' ';
-    border-color: transparent #dddddd #dddddd transparent !important;;
-    box-shadow: 0px 4px 4px -3px rgba(0,0,0,0.7);
+    border-color: transparent #dddddd #dddddd transparent !important;
+    ;
+    box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.7);
 }
-.post .post-content-wrapper{
+
+html.nik .post .post-content-wrapper {
     overflow: hidden;
 }
-.post .blog-featured-image {
+
+html.nik .post .blog-featured-image {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.post .post-content-wrapper .post-content{
+
+html.nik .post .post-content-wrapper .post-content {
     /* background-color: #E3E4E6; */
     overflow: hidden;
 }
-.post .post-content-wrapper .post-content p{
+
+html.nik .post .post-content-wrapper .post-content p {
     color: #B3B4B6;
     font-weight: 100;
 }
 
-.post .post-content-wrapper .post-category{
+html.nik .post .post-content-wrapper .post-category {
     text-align: right;
     color: #495057;
     font-weight: 700;
     text-transform: uppercase;
     background: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));
     background: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));;
-    
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));
+    ;
 }
-.post-content-wrapper .post-category,
-.post-content-wrapper .post-category a,
-.post-content-wrapper .post-category a:visited,
-.post-content-wrapper .post-category a:hover{
+
+html.nik .post-content-wrapper .post-category,
+html.nik .post-content-wrapper .post-category a,
+html.nik .post-content-wrapper .post-category a:visited,
+html.nik .post-content-wrapper .post-category a:hover {
     color: #FAAF0F;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
-.bg-image {
+html.nik .bg-image {
     background-position: center;
 }
 
-#nav-pagination {
+html.nik #nav-pagination {
     width: 100%;
     text-align: center;
     margin-top: 30px;
 }
-#nav-pagination a.page-numbers, 
-#nav-pagination a.prev.page-numbers,
-#nav-pagination a.next.page-numbers,
-#nav-pagination span.page-numbers.current { 
-    background: rgba(0,0,0,0.15);
+
+html.nik #nav-pagination a.page-numbers,
+html.nik #nav-pagination a.prev.page-numbers,
+html.nik #nav-pagination a.next.page-numbers,
+html.nik #nav-pagination span.page-numbers.current {
+    background: rgba(0, 0, 0, 0.15);
     display: inline-block;
     padding: 7px 18px;
     font-weight: 500;
     font-size: 1.3em;
     border-radius: 5px;
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#nav-pagination a.page-numbers:hover,
-#nav-pagination a.prev.page-numbers:hover,
-#nav-pagination a.next.page-numbers:hover  {
+html.nik #nav-pagination a.page-numbers:hover,
+html.nik #nav-pagination a.prev.page-numbers:hover,
+html.nik #nav-pagination a.next.page-numbers:hover {
     border: 1px solid #faaf0f;
     /* #3b7eb4; */
     color: #fff;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
-#nav-pagination span.page-numbers.current {
+
+html.nik #nav-pagination span.page-numbers.current {
     background: rgba(0, 0, 0, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.5);
     color: #faaf0f;
@@ -399,81 +481,91 @@ footer {
 /*  =====================================================
         SINGLE POSTS
     ===================================================== */
-.single-post .post-featured-image {
+
+html.nik .single-post .post-featured-image {
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.single-post .post-header {
+html.nik .single-post .post-header {
     background-color: #f8f9fa;
 }
-.single-post .post-content {
+
+html.nik .single-post .post-content {
     background-color: #f8f9fa;
 }
-.single-post .post-content p {
+
+html.nik .single-post .post-content p {
     text-align: justify;
     color: #2b2c33;
 }
-.single-post .post-category {
+
+html.nik .single-post .post-category {
     text-decoration: none;
     color: #FAAF0F;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
-.single-post .post-footer {
+
+html.nik .single-post .post-footer {
     padding: 30px 20px;
- 	color: #2b2c33;   
-}
-.single-post .author-image {
-    background-size: cover;
-    border-radius: 50%;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    color: #2b2c33;
 }
 
-.single-post .author-quote {
+html.nik .single-post .author-image {
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+html.nik .single-post .author-quote {
     text-align: justify;
     word-wrap: break-word;
     overflow: hidden;
 }
 
-.single-post .quote {
+html.nik .single-post .quote {
     border-radius: 5px;
     background-color: #dddddd;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-.single-post .quote::after{
+html.nik .single-post .quote::after {
     content: ' ';
     border: 12px solid;
     border-color: transparent #dddddd #dddddd transparent !important;
-    box-shadow: 0px 4px 4px -3px rgba(0,0,0,0.7);
+    box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.7);
 }
-
 
 
 /*  =====================================================
         FEATURED POSTS
     ===================================================== */
-.single-featured-post {
-    background: background: rgba(0,0,0,0.10);
-}
-.single-featured-post a{
-    /* color: inherit; */
-}
-.single-featured-image{
-	background-size: cover;
-}
-.double-featured-post {
-    background: background: rgba(0,0,0,0.10);
+
+html.nik .single-featured-post {
+    background: background: rgba(0, 0, 0, 0.10);
 }
 
-.double-featured-image{
+html.nik .single-featured-post a {
+    /* color: inherit; */
+}
+
+html.nik .single-featured-image {
     background-size: cover;
 }
 
-.podcast-featured-post {
-    background: rgba(0,0,0,0.10);
+html.nik .double-featured-post {
+    background: background: rgba(0, 0, 0, 0.10);
 }
-.podcast-featured-image{
+
+html.nik .double-featured-image {
+    background-size: cover;
+}
+
+html.nik .podcast-featured-post {
+    background: rgba(0, 0, 0, 0.10);
+}
+
+html.nik .podcast-featured-image {
     background-size: cover;
 }
 
@@ -481,31 +573,33 @@ footer {
 /*  =====================================================
         NEWS POSTS
     ===================================================== */
-.news-post.post{
-    background: rgba(0,0,0,0.10);
+
+html.nik .news-post.post {
+    background: rgba(0, 0, 0, 0.10);
 }
 
-.news-post a{
+html.nik .news-post a {
     /* color:inherit; */
 }
 
-.news-post .post-title{
+html.nik .news-post .post-title {
     /* color:inherit; */
 }
 
-.news-post .float-post-content p{
+html.nik .news-post .float-post-content p {
     /* color:inherit; */
 }
 
-.news-featured-image{
-	background-size: cover;
+html.nik .news-featured-image {
+    background-size: cover;
 }
 
 
 /*  =====================================================
         PODCAST POSTS
     ===================================================== */
-#podcast-section a.img-link{
+
+html.nik #podcast-section a.img-link {
     /* background-color: transparent; */
 }
 
@@ -513,7 +607,7 @@ footer {
 /*  =====================================================
         BLOG POSTS
     ===================================================== */
-#blog-section a.img-link{
+
+html.nik #blog-section a.img-link {
     /* background-color: transparent; */
 }
-

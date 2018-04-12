@@ -19,7 +19,7 @@ function insert_category_destaque() {
 		'Destaque'
 		, 'category'
 		, array(
-		  'description'	=> 'Para postagens que aparecerão no Slider'
+		  'description'	=> 'Para postagens que aparecerão no slider'
 		  , 'slug' 		=> 'destaque'
 		)
 	);

@@ -1,49 +1,43 @@
 <?php 	
-$podcast_cat_id = get_category_by_slug('podcast')->term_id;
-$args = array(
-	'type'				=> 'post'
-	, 'posts_per_page'	=> 3
-	, 'category__not_in' => array($podcast_cat_id)
-);
-
-$featuredPosts = new WP_Query($args);
-
-if ( $featuredPosts->have_posts() ) :
-	$featuredPosts->the_post(); ?>
-
+	$podcast_cat_id = get_category_by_slug('podcast')->term_id;
+	$args = array(
+		'type'				=> 'post'
+		, 'posts_per_page'	=> 3
+		, 'category__not_in' => array($podcast_cat_id)
+	);
+	$featuredPosts = new WP_Query($args);
+	if ( $featuredPosts->have_posts() ) :
+		$featuredPosts->the_post(); ?>
 <div id="featured-posts">
-
 	<div class="section-title hide">
 		<h2>Header Featured </h2>
-	</div>	
+	</div>
 	<div class="row">
 		<h3 class="section-title">Destaques</h3>
 	</div>
-		<div class="row">
-
-			<div class="col single-featured-post">
-				<div class="single-featured-post post post-<?php the_ID(); ?>">
-					<a href="<?php the_permalink(); ?>">
-						<div class="single-featured-image bg-image">
-							<div class="post-title">
-								<?php the_title(); ?>
-							</div>
-							<style>
-								<?php if(get_the_post_thumbnail()) : ?>
-								.post-<?php the_ID(); ?> .single-featured-image {
-									background-image: url('<?php the_post_thumbnail_url(); ?>'); 
-								}
-								<?php else : ?>
-								.post-<?php the_ID(); ?> .single-featured-image {
-									background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
-								}
-								<?php endif; ?>
-							</style>
+	<div class="row">
+		<div class="col single-featured-post">
+			<div class="single-featured-post post post-<?php the_ID(); ?>">
+				<a href="<?php the_permalink(); ?>">
+					<div class="single-featured-image bg-image">
+						<div class="post-title">
+							<?php the_title(); ?>
 						</div>
-					</a>
-					
-					<div class="post-category">
-						<?php  $categories = get_the_category();
+						<style>
+							<?php if(get_the_post_thumbnail()) : ?>
+							.post-<?php the_ID(); ?> .single-featured-image {
+								background-image: url('<?php the_post_thumbnail_url(); ?>'); 
+							}
+							<?php else : ?>
+							.post-<?php the_ID(); ?> .single-featured-image {
+								background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
+							}
+							<?php endif; ?>
+						</style>
+					</div>
+				</a>
+				<div class="post-category">
+					<?php  $categories = get_the_category();
 						//print_r($categories); die();
 						$hasnt_cat = true;
 						for ($i=0; $i <= count($categories); $i++) {
@@ -56,66 +50,59 @@ if ( $featuredPosts->have_posts() ) :
 								}
 							}
 						} ?>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div id="superbanner_holder" class="featured-ad-wrapper">
+				<div class="row">
+					<div class="col ad-superbanner-featured">
+						<div id="superbanner" class="ad-superbanner-featured">
+							<!-- <img src="<?php //bloginfo('template_url') ?>/assets/ad/superbanner728x90/superbanner_welcome.jpg" alt=""> -->
+							<div id="ad-728x90" class="ad"></div>
+							<script>
+								var baseUrl = window.location.protocol + "//" +  window.location.host + "/" +  window.location.pathname.split('/')[0];
+								   var url = '';
+								   (baseUrl.indexOf('localhost') > 0) ? url = baseUrl + window.location.pathname.split('/')[1] : url = baseUrl;
+								jQuery(document).ready(function($) {
+									$( "#ad-728x90" ).load( url + "/wp-content/themes/niknights/assets/ad/superbanner728x90/html/ad-728x90.html", function( response, status, xhr ) {
+										if ( status == "error" ) {
+											var msg = "Sorry but there was an error: ";
+											$("#ad-728x90").html( msg + xhr.status + " " + xhr.statusText );
+										}
+									});
+								});		
+							</script>
+						</div>
 					</div>
 				</div>
+				<!-- Fim da Row -->
 			</div>
-			<div class="col">
-
-				<div id="superbanner_holder" class="featured-ad-wrapper">
-					<div class="row">
-
-						<div class="col ad-superbanner-featured">
-							<div id="superbanner" class="ad-superbanner-featured">
-								<!-- <img src="<?php //bloginfo('template_url') ?>/assets/ad/superbanner728x90/superbanner_welcome.jpg" alt=""> -->
-								<div id="ad-728x90" class="ad"></div>
-								<script>
-									var baseUrl = window.location.protocol + "//" +  window.location.host + "/" +  window.location.pathname.split('/')[0];
-								    var url = '';
-								    (baseUrl.indexOf('localhost') > 0) ? url = baseUrl + window.location.pathname.split('/')[1] : url = baseUrl;
-									jQuery(document).ready(function($) {
-										$( "#ad-728x90" ).load( url + "/wp-content/themes/niknights/assets/ad/superbanner728x90/html/ad-728x90.html", function( response, status, xhr ) {
-											//debugger;
-											if ( status == "error" ) {
-												var msg = "Sorry but there was an error: ";
-												$("#ad-728x90").html( msg + xhr.status + " " + xhr.statusText );
-											}
-										});
-									});		
-								</script>
-							
-							</div>
-						</div>
-
-					</div> <!-- Fim da Row -->
-				</div>
-			
-				<div class="featured-double-wrapper">
-					<div class="row">
-
-						<?php $featuredPosts->the_post(); ?>
-
-						<div class="col">
-							<div class="double-featured-post post post-<?php the_ID(); ?>">
-								<a href="<?php the_permalink(); ?>">
-									<div class="double-featured-image bg-image">
-										<div class="post-title">
-											<?php the_title(); ?>
-										</div>
-										<style>
-											<?php if(get_the_post_thumbnail()) : ?>
-											.post-<?php the_ID(); ?> .double-featured-image {
-												background-image: url('<?php the_post_thumbnail_url(); ?>'); 
-											}
-											<?php else : ?>
-											.post-<?php the_ID(); ?> .double-featured-image {
-												background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
-											}
-											<?php endif; ?>
-										</style>
+			<div class="featured-double-wrapper">
+				<div class="row">
+					<?php $featuredPosts->the_post(); ?>
+					<div class="col">
+						<div class="double-featured-post post post-<?php the_ID(); ?>">
+							<a href="<?php the_permalink(); ?>">
+								<div class="double-featured-image bg-image">
+									<div class="post-title">
+										<?php the_title(); ?>
 									</div>
-								</a>
-								<div class="post-category">
-									<?php  $categories = get_the_category();
+									<style>
+										<?php if(get_the_post_thumbnail()) : ?>
+										.post-<?php the_ID(); ?> .double-featured-image {
+											background-image: url('<?php the_post_thumbnail_url(); ?>'); 
+										}
+										<?php else : ?>
+										.post-<?php the_ID(); ?> .double-featured-image {
+											background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
+										}
+										<?php endif; ?>
+									</style>
+								</div>
+							</a>
+							<div class="post-category">
+								<?php  $categories = get_the_category();
 									$hasnt_cat = true;
 									for ($i=0; $i <= count($categories); $i++) {
 										if ($i >= 0 && $i < count($categories)) {
@@ -127,34 +114,32 @@ if ( $featuredPosts->have_posts() ) :
 											}
 										}
 									} ?>
-								</div>
 							</div>
 						</div>
-
-						<?php $featuredPosts->the_post(); ?>
-						
-						<div class="col">
-							<div class="double-featured-post post post-<?php the_ID(); ?>">
-								<a href="<?php the_permalink(); ?>">
-									<div class="double-featured-image bg-image">
-										<div class="post-title">
-											<?php the_title(); ?>
-										</div>
-										<style>
-											<?php if(get_the_post_thumbnail()) : ?>
-											.post-<?php the_ID(); ?> .double-featured-image {
-												background-image: url('<?php the_post_thumbnail_url(); ?>'); 
-											}
-											<?php else : ?>
-											.post-<?php the_ID(); ?> .double-featured-image {
-												background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
-											}
-											<?php endif; ?>
-										</style>
+					</div>
+					<?php $featuredPosts->the_post(); ?>
+					<div class="col">
+						<div class="double-featured-post post post-<?php the_ID(); ?>">
+							<a href="<?php the_permalink(); ?>">
+								<div class="double-featured-image bg-image">
+									<div class="post-title">
+										<?php the_title(); ?>
 									</div>
-								</a>
-								<div class="post-category">
-									<?php  $categories = get_the_category();
+									<style>
+										<?php if(get_the_post_thumbnail()) : ?>
+										.post-<?php the_ID(); ?> .double-featured-image {
+											background-image: url('<?php the_post_thumbnail_url(); ?>'); 
+										}
+										<?php else : ?>
+										.post-<?php the_ID(); ?> .double-featured-image {
+											background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
+										}
+										<?php endif; ?>
+									</style>
+								</div>
+							</a>
+							<div class="post-category">
+								<?php  $categories = get_the_category();
 									$hasnt_cat = true;
 									for ($i=0; $i <= count($categories); $i++) {
 										if ($i >= 0 && $i < count($categories)) {
@@ -166,18 +151,16 @@ if ( $featuredPosts->have_posts() ) :
 											}
 										}
 									} ?>
-								</div>
 							</div>
 						</div>
-					</div> <!-- Fim da Row -->
+					</div>
 				</div>
+				<!-- Fim da Row -->
 			</div>
-		</div> <!-- Fim da Row -->
-
-		<div class="clear"></div>
-
+		</div>
+	</div>
+	<!-- Fim da Row -->
+	<div class="clear"></div>
 	<?php wp_reset_postdata(); ?>
-
 </div>
-
 <?php endif; ?>

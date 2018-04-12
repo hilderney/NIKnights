@@ -1,23 +1,24 @@
-.nik-carousel-container{
-	/* background: rgba(0,0,0,0.15); */
+html.nik .nik-carousel-container {
+    /* background: rgba(0,0,0,0.15); */
 }
 
-#nik_carousel {
+html.nik #nik_carousel {
     height: 380px;
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
-    overflow:hidden;
-    
+    overflow: hidden;
 }
-#nik_carousel .carousel-indicators {
+
+html.nik #nik_carousel .carousel-indicators {
     position: absolute;
     right: 0;
     left: auto;
     bottom: 0;
     margin: 15px;
 }
-#nik_carousel .carousel-indicators li{
+
+html.nik #nik_carousel .carousel-indicators li {
     width: 10px;
     height: 10px;
     margin: 5px;
@@ -25,25 +26,24 @@
     border-radius: 50%;
 }
 
-#nik_carousel .carousel-featured-image{
+html.nik #nik_carousel .carousel-featured-image {
     width: 100%;
     height: 380px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#nik_carousel .post-title{
+html.nik #nik_carousel .post-title {
     font-size: 2rem;
     padding-left: 80px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 500;
     color: #ffffff;
-    
 }
 
-#nik_carousel .carousel-content {
+html.nik #nik_carousel .carousel-content {
     margin: auto auto;
-    width: 50% ;
+    width: 50%;
     border-radius: 5px;
     overflow: hidden;
     border-radius: 5px;
@@ -51,55 +51,49 @@
     /* background: rgba(255,255,255,0.35);
     box-shadow: -1px 1px 10px -1px rgba(0, 0, 0, 0.35); */
 }
-#nik_carousel .carousel-content p{
+
+html.nik #nik_carousel .carousel-content p {
     display: none;
     padding: 20px;
     font-size: 1.3em;
     font-weight: 500;
     color: #ffffff;
-    text-shadow: 
-        -2px 2px 2px rgba(0, 0, 0, 0.7);
+    text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
 }
-#nik_carousel .carousel-content p:first-child{
+
+html.nik #nik_carousel .carousel-content p:first-child {
     display: block;
 }
 
-#nik_carousel a.carousel-control-prev {
-    background: linear-gradient(
-        to left,
-         rgba(0,0,0,0),
-         rgba(0,0,0,0.5)
-    );
+html.nik #nik_carousel a.carousel-control-prev {
+    background: linear-gradient( to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     opacity: .8;
 }
 
-#nik_carousel a.carousel-control-next {
-    background: linear-gradient(
-        to right,
-        rgba(0,0,0,0),
-        rgba(0,0,0,0.5)
-    );
+html.nik #nik_carousel a.carousel-control-next {
+    background: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     opacity: .8;
 }
-.carousel-control-prev, .carousel-control-next{
+
+html.nik .carousel-control-prev,
+html.nik .carousel-control-next {
     width: 80px;
 }
 
-
-#nik_carousel .carousel-control-next:focus, 
-#nik_carousel .carousel-control-next:hover,
-#nik_carousel .carousel-control-prev:focus,
-#nik_carousel .carousel-control-prev:hover {
+html.nik #nik_carousel .carousel-control-next:focus,
+html.nik #nik_carousel .carousel-control-next:hover,
+html.nik #nik_carousel .carousel-control-prev:focus,
+html.nik #nik_carousel .carousel-control-prev:hover {
     color: #fff;
     text-decoration: none;
     outline: 0;
     opacity: .9;
 }
 
-#nik_carousel a,
-#nik_carousel a:hover,
-#nik_carousel a:visited,
-#nik_carousel a:focus{
+html.nik #nik_carousel a,
+html.nik #nik_carousel a:hover,
+html.nik #nik_carousel a:visited,
+html.nik #nik_carousel a:focus {
     text-decoration: none;
     color: inherit;
 }

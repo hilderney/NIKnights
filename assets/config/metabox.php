@@ -1,6 +1,5 @@
 <?php
 /* Define a meta box */
-
 add_action( 'add_meta_boxes', 'nik_add_custom_box' );
 
 // Compatibilidade para  WP < 3.0
@@ -8,9 +7,6 @@ add_action( 'add_meta_boxes', 'nik_add_custom_box' );
 
 /* Faça algo com os dados inseridos */
 add_action( 'save_post', 'nik_save_postdata' );
-
-
-
 
 /* Adiciona uma meta box na coluna principal das telas de edição de Post e Página */
 function nik_add_custom_box() {
@@ -24,10 +20,6 @@ function nik_add_custom_box() {
         );
     }
 }
-
-
-
-
 
 /* Imprime o conteúdo da meta box */
 function nik_print_content_meta_box( $post ) {
@@ -43,10 +35,6 @@ function nik_print_content_meta_box( $post ) {
   echo '</label> ';
   echo '<input type="text" id="author_comment_text" name="author_comment_text" value="'.esc_attr($value).'" size="50" />';
 }
-
-
-
-
 
 /* Quando o post for salvo, salvamos também nossos dados personalizados */
 function nik_save_postdata( $post_id ) {

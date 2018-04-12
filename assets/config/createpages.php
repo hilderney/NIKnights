@@ -32,11 +32,11 @@ function insert_page_home() {
 if( null == get_page_by_title( 'home' ) ) {
     add_action( 'init', 'insert_page_home' );
 }
-function insert_page_podcast() {
+function insert_page_nicast() {
 	wp_insert_post( 
 		array(
-			'post_title'		=> 'Podcast'
-			, 'post-name'		=> 'podcast'				
+			'post_title'		=> 'Nicast'
+			, 'post-name'		=> 'nicast'				
 			, 'post_content'	=> ''
 			, 'post_status'		=> 'publish'
 			, 'post_author'		=> 1
@@ -44,8 +44,8 @@ function insert_page_podcast() {
 		)
 	);
 }
-if( null == get_page_by_title( 'podcast' ) ) {
-    add_action( 'init', 'insert_page_podcast' );
+if( null == get_page_by_title( 'nicast' ) ) {
+    add_action( 'init', 'insert_page_nicast' );
 }
 function insert_page_sobre() {
 	wp_insert_post( 
@@ -87,7 +87,7 @@ if ($home_page->post_status == 'trash') {
 	$home_page->post_status = 'publish';
 	wp_update_post($home_page);
 }
-$podcast_page = get_page_by_title( 'podcast' );
+$podcast_page = get_page_by_title( 'nicast' );
 if ($podcast_page->post_status == 'trash') {
 	$podcast_page->post_status = 'publish';
 	wp_update_post($podcast_page);

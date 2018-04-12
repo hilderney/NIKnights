@@ -1,324 +1,314 @@
-/* // Extra small devices (portrait phones, less than 576px) */
+/*  =====================================================
+        Extra small devices (portrait phones, less than 576px)
+    ===================================================== */
+
 @media (max-width: 575px) {
-		html{
+	/*  =====================================================
+        GENERAL FUNCTIONS
+    ===================================================== */
+	html.nik {
 		margin: 0;
-    	padding: 0;
-	    width: 100%;
-	    min-width: fit-content;
-    	height: auto;
-    	min-height: fit-content;
-	    margin-top: 0px !important;
-	}       
-
-	body{
-		/*
 		padding: 0;
-		margin: 0;
-	    padding-top: 34px;
-	    */
-	    display: block;
-	    width: 100%;
-	    min-width: fit-content;
-	    height: 100%;
-	    font-size: 16px;
-	    background-size: 100vw 100vh;
-	    padding-top: 50px;
+		width: 100%;
+		min-width: fit-content;
+		height: auto;
+		min-height: fit-content;
+		margin-top: 0px !important;
 	}
-
-	h1 {
-	    font-size: 20px;
-	    margin: 0 auto;
+	html.nik body {
+		display: block;
+		width: 100%;
+		min-width: fit-content;
+		height: 100%;
+		font-size: 16px;
+		background-size: 100vw 100vh;
+		padding-top: 50px;
 	}
-
-	div#wpadminbar {
-	    display: none;
+	html.nik h1 {
+		font-size: 20px;
+		margin: 0 auto;
 	}
-	a, a:visited, a:hover, a:focus{
-	    font-size: inherit;
+	html.nik a,
+	html.nik a:visited,
+	html.nik a:hover,
+	html.nik a:focus {
+		font-size: inherit;
 	}
-	.blog a, .blog a:visited, .blog a:hover, .blog a:focus{
-	    font-size: inherit;
+	html.nik .blog a,
+	html.nik .blog a:visited,
+	html.nik .blog a:hover,
+	html.nik .blog a:focus {
+		font-size: inherit;
 	}
-	.archive a, .archive a:visited, .archive a:hover, .archive a:focus{
-	    font-size: inherit;
+	html.nik .archive a,
+	html.nik .archive a:visited,
+	html.nik .archive a:hover,
+	html.nik .archive a:focus {
+		font-size: inherit;
 	}
-
-	.home a, .home a:visited, .home a:hover, .home a:focus{
-	    font-size: inherit;
+	html.nik .home a,
+	html.nik .home a:visited,
+	html.nik .home a:hover,
+	html.nik .home a:focus {
+		font-size: inherit;
 	}
-
-	.page a, .page a:visited, .page a:hover, .page a:focus{
-	    font-size: inherit;
+	html.nik .page a,
+	html.nik .page a:visited,
+	html.nik .page a:hover,
+	html.nik .page a:focus {
+		font-size: inherit;
 	}
-	.single a, .single a:visited, .single a:hover, .single a:focus{
-	    font-size: inherit;
+	html.nik .single a,
+	html.nik .single a:visited,
+	html.nik .single a:hover,
+	html.nik .single a:focus {
+		font-size: inherit;
 	}
-	button, .btn, input[type=button]{
-	  	font-size: inherit;
+	html.nik button,
+	html.nik .btn,
+	html.nik input[type=button] {
+		font-size: inherit;
 	}
-	button:focus, .btn:focus, input[type=button]:focus{
-	    font-size: inherit;
+	html.nik button:focus,
+	html.nik .btn:focus,
+	html.nik input[type=button]:focus {
+		font-size: inherit;
 	}
-	button.selected:focus, .btn.selected:focus, input[type=button].selected:focus{
-	    font-size: inherit;
+	html.nik button.selected:focus,
+	html.nik .btn.selected:focus,
+	html.nik input[type=button].selected:focus {
+		font-size: inherit;
 	}
-	.main-wrapper{
+	html.nik .main-wrapper {
 		margin: 0 auto;
 		min-width: 100%;
 		width: 100%;
 		max-width: 100%;
 	}
-
-	.main-container{
+	html.nik .main-container {
 		margin: 0;
 		padding: 0;
 		min-width: 100%;
 		width: 100%;
 		max-width: 100%;
 	}
-	.main-container.container{
+	html.nik .main-container.container {
 		min-width: 100%;
 		width: 100%;
-		max-width: 100%;	
+		max-width: 100%;
 	}
-	.main-container .row, .main-container .row .col {
+	html.nik .main-container .row,
+	html.nik .main-container .row .col {
 		margin: 0;
 		padding: 0;
 	}
-	section {
-	    margin: 15px 0;
+	html.nik section {
+		margin: 15px 0;
 	}
-	#carousel-section{
+	html.nik #carousel-section {
 		display: none;
 	}
-
-
 	/*	=====================================================
 			FEATURED HEADER 
 		===================================================== */
-
-	#main-featured-content{
-	    width: 100%;
+	html.nik #main-featured-content {
+		width: 100%;
 	}
-
-	#featured-posts {
-	    width: 100%;
+	html.nik #featured-posts {
+		width: 100%;
 	}
-	#header-featured-col-left{
+	html.nik #header-featured-col-left {
 		width: 100%;
 		float: left;
 	}
-	#header-featured-post-bot-left{
+	html.nik #header-featured-post-bot-left {
 		width: 320px;
 		height: 200px;
 		float: left;
 	}
-	#header-featured-post-bot-right{
+	html.nik #header-featured-post-bot-right {
 		width: 320px;
 		height: 200px;
 		float: right;
 	}
-	#header-featured-col-right{
+	html.nik #header-featured-col-right {
 		width: 320px;
 		float: right;
 	}
-	#header-featured-post-right-main{
+	html.nik #header-featured-post-right-main {
 		width: 320px;
 		height: 290px;
 		float: right;
 	}
-
-
-
 	/*	=====================================================
 			SIDEBAR 
 		===================================================== */
-	#sidebar{
+	html.nik #sidebar {
 		display: block;
-	    margin: 0 auto;
-	    height: auto;
-	    width: 320px;
+		margin: 0 auto;
+		height: auto;
+		width: 320px;
 	}
-	#main-sidebar{ 
+	html.nik #main-sidebar {
 		float: right;
 		width: 100%;
 		height: auto;
 	}
-	#sidebar aside {
+	html.nik #sidebar aside {
 		width: 320px;
-	    min-height: 320px;
-	    display: inline-block;
-	    margin: 0 0 20px 0;
+		min-height: 320px;
+		display: inline-block;
+		margin: 0 0 20px 0;
 	}
-	#sidebar .widget {
-	    padding-bottom: 20px;
+	html.nik #sidebar .widget {
+		padding-bottom: 20px;
 	}
-	#sidebar .widget.widget_categories, #sidebar .widget.widget_archive {
-	    /* display: none !important; */
+	html.nik #sidebar .widget.widget_categories,
+	html.nik #sidebar .widget.widget_archive {
+		/* display: none !important; */
 	}
-	#sidebar .widget-title {
-	    width: 320px;
-	    height: 40px;
-	    font-size: 1.2em;
-	    padding: 5px;
+	html.nik #sidebar .widget-title {
+		width: 320px;
+		height: 40px;
+		font-size: 1.2em;
+		padding: 5px;
 	}
-	#sidebar ul {
+	html.nik #sidebar ul {
 		width: 320px;
 		height: auto;
-	    display: inline-block;
-	    padding: 0;
-	    margin: 0;
-	}
-	#sidebar ul ul, #sidebar ol ol{
+		display: inline-block;
 		padding: 0;
-	    margin: 0;
+		margin: 0;
 	}
-	ul li, ol li {
-	    margin: 5px 0;
-	    padding: 0 20px;
+	html.nik #sidebar ul ul,
+	html.nik #sidebar ol ol {
+		padding: 0;
+		margin: 0;
 	}
-
-
-
+	html.nik ul li,
+	html.nik ol li {
+		margin: 5px 0;
+		padding: 0 20px;
+	}
 	/*  =====================================================
 	        HEADER
 	    ===================================================== */
-
-	.brand-holder {
-	    height: 50px;
-	    width: auto;
+	html.nik .brand-holder {
+		height: 50px;
+		width: auto;
 	}
-
-	#site-brand {
-	    height: 72px;
-	    width: 72px;
-	    position: relative;
-	    top: -10px;
+	html.nik #site-brand {
+		height: 72px;
+		width: 72px;
+		position: relative;
+		top: -10px;
 	}
-
-	.navbar-nav {
-	    font-size: 18px;
+	html.nik .navbar-nav {
+		font-size: 18px;
 	}
-
-	.navbar-nav ul li{
-	    padding: 0 20px;
+	html.nik .navbar-nav ul li {
+		padding: 0 20px;
 	}
-
-	.navbar-nav a.nav-link{
-	    padding: 0;
+	html.nik .navbar-nav a.nav-link {
+		padding: 0;
 	}
-
-	.navbar-collapse>.navbar-nav {
-	    padding-top: 30px;
+	html.nik .navbar-collapse>.navbar-nav {
+		padding-top: 30px;
 	}
-
-
 	/*  =====================================================
 	        MAIN CONTENT 
 	    ===================================================== */
-
-	#main-content{
-	    float: left;
-	    width: 100%;
-	    min-height: 100%;
-	    min-width: 100%;
-	    max-width: 576px;
+	html.nik #main-content {
+		float: left;
+		width: 100%;
+		min-height: 100%;
+		min-width: 100%;
+		max-width: 576px;
 	}
-
-
 	/*	=====================================================
 			FOOTER
 		===================================================== */
-	footer{
-	    min-height: 300px;
-	    position: relative;
-	    left: 0;
-	    right: 0;
-	    bottom: -16px;
-	    z-index: 1030;
+	html.nik footer {
+		min-height: 300px;
+		position: relative;
+		left: 0;
+		right: 0;
+		bottom: -16px;
+		z-index: 1030;
 	}
-
-
-
 	/*	=====================================================
 			POSTS
 		===================================================== */
-	.post {
-	    min-height: 285px;
-	    width: 100%;
-	    min-width: 320px;
-	    max-width: 576px;
-	    margin-top: 15px;
+	html.nik .post {
+		min-height: 285px;
+		width: 100%;
+		min-width: 320px;
+		max-width: 576px;
+		margin-top: 15px;
 	}
-
-	.post:first-child {
-	    display: block;
-	    margin-top: 0;
+	html.nik .post:first-child {
+		display: block;
+		margin-top: 0;
 	}
-	.post a {
-	    min-height: 200px;
+	html.nik .post a {
+		min-height: 200px;
 	}
-
-	.post p {
-	    /* display:none; */
+	html.nik .post p {
+		/* display:none; */
 	}
-
-	.post-title {
-	    display: block;
-	    max-height: 85px;
-	    line-height: 1.1em;
-	    width: 100%;
-	    padding: 10px 15px;
-	    font-size: 1.1rem;
+	html.nik .post-title {
+		display: block;
+		max-height: 85px;
+		line-height: 1.1em;
+		width: 100%;
+		padding: 10px 15px;
+		font-size: 1.1rem;
 	}
-
-	.post-content{
-	    width: 100%;
-	    padding: 5px;
-	    display: block;   
+	html.nik .post-content {
+		width: 100%;
+		padding: 5px;
+		display: block;
 	}
-	.post-category {
-	    position: absolute;
-	    display: block;
-	    bottom: 0px;
-	    left: 0;
-	    right: 0;
-	    height: 30px;
-	    padding: 5px 15px;
-	    text-align: right;
-	    font-size: 0.8em;
+	html.nik .post-category {
+		position: absolute;
+		display: block;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		height: 30px;
+		padding: 5px 15px;
+		text-align: right;
+		font-size: 0.8em;
 	}
-	.post .author {
-	    display: block;
-	    padding: 7.5px 30px;
-	    max-width: 354px;
-	    max-height: 160px;
+	html.nik .post .author {
+		display: block;
+		padding: 7.5px 30px;
+		max-width: 354px;
+		max-height: 160px;
 	}
-
-	.post .author-info{
-	    /* padding: 7.5px 30px; */
-	    font-size: 0.9em;
+	html.nik .post .author-info {
+		/* padding: 7.5px 30px; */
+		font-size: 0.9em;
 	}
-	.page .author-info,
-	.archive .author-info,
-	.category .author-info,
-	.blog .author-info{
-		text-shadow: 1px 1px 3px rgba(0,0,0,0.85);
+	html.nik .page .author-info,
+	html.nik .archive .author-info,
+	html.nik .category .author-info,
+	html.nik .blog .author-info {
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
 	}
-
-	.post .author-data {
-	    display: block;
+	html.nik .post .author-data {
+		display: block;
 	}
-	.post .author-image {
-	    display: block;
-	    width: 50px;
-	    height: 50px;
-	    margin-top: 7px;
+	html.nik .post .author-image {
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin-top: 7px;
 	}
-	.author .row .col:last-Child {
+	html.nik .author .row .col:last-Child {
 		padding: 0;
 	}
-	.post .author-quote {
+	html.nik .post .author-quote {
 		width: fit-content;
 		margin: 0 auto;
 		padding: 0.6em 0.5em;
@@ -326,329 +316,291 @@
 		max-height: 85px;
 		font-size: 0.85em;
 	}
-	.page .post .author-name,
-	.archive .post .author-name,
-	.category .post .author-name,
-	.blog .post .author-name {
+	html.nik .page .post .author-name,
+	html.nik .archive .post .author-name,
+	html.nik .category .post .author-name,
+	html.nik .blog .post .author-name {
 		color: #faaf0f;
 	}
-	.page .post .author-twitter,
-	.archive .post .author-twitter,
-	.category .post .author-twitter,
-	.blog .post .author-twitter {
-	    color: #faaf0f;
+	html.nik .page .post .author-twitter,
+	html.nik .archive .post .author-twitter,
+	html.nik .category .post .author-twitter,
+	html.nik .blog .post .author-twitter {
+		color: #faaf0f;
 	}
-	.post .quote {
-	    position: relative;
-	    top: 0px;
-	    width: 140px;
-	    height: auto;
-	    min-height: 70px;
-	    max-height: 140px;
+	html.nik .post .quote {
+		position: relative;
+		top: 0px;
+		width: 140px;
+		height: auto;
+		min-height: 70px;
+		max-height: 140px;
 	}
-	.post .quote::after{
-	    position: absolute;
-	    width: 0;
-	    height: 0;
-	    top: 30px;
-	    left: -20px;
-	    right: auto;
-	    bottom: auto;
-	    border: 12px solid;
+	html.nik .post .quote::after {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 30px;
+		left: -20px;
+		right: auto;
+		bottom: auto;
+		border: 12px solid;
 	}
-	.post .col:first-child{
-	    padding-right: 0;
+	html.nik .post .col:first-child {
+		padding-right: 0;
 	}
-	.post .col:last-child{
-	    padding-left: 0;
+	html.nik .post .col:last-child {
+		padding-left: 0;
 	}
-	.post:first-child {
-	    margin: 0;
+	html.nik .post:first-child {
+		margin: 0;
 	}
-	.post::last-child {
-	    margin-bottom: 0;
+	html.nik .post::last-child {
+		margin-bottom: 0;
 	}
-	.post .post-content-wrapper{
-	    min-height: 285px;
-	    max-height: 285px;
-	    min-width: 320px;
-	    background: linear-gradient( 
-	    	transparent , 
-	    	rgba(0, 0, 0, 0.35) , 
-	    	rgba(0, 0, 0, 0.35) , 
-	    	transparent ) !important;
+	html.nik .post .post-content-wrapper {
+		min-height: 285px;
+		max-height: 285px;
+		min-width: 320px;
+		background: linear-gradient( transparent, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35), transparent) !important;
 	}
-	.post .post-content-wrapper .post-content p {
-		color:#fff;
+	html.nik .post .post-content-wrapper .post-content p {
+		color: #fff;
 	}
-	.post .blog-featured-image {
-	    min-height: 270px;
-	    max-height: 285px;
-	    position: absolute;
-	    width: 100%;
-	    min-width: 320px;
-	    height: 285px;
-	    left: 0;
-	    right: 0;
+	html.nik .post .blog-featured-image {
+		min-height: 270px;
+		max-height: 285px;
+		position: absolute;
+		width: 100%;
+		min-width: 320px;
+		height: 285px;
+		left: 0;
+		right: 0;
 	}
-	.post .post-content-wrapper .post-content{
-	    max-height: 229px;
+	html.nik .post .post-content-wrapper .post-content {
+		max-height: 229px;
 	}
-	.post .post-content-wrapper .post-content p{
-	    display: none;
-	    padding:10px;
-	    margin: 0;
+	html.nik .post .post-content-wrapper .post-content p {
+		display: none;
+		padding: 10px;
+		margin: 0;
 	}
-	.post .post-content-wrapper .post-content p:first-child{
-	    display: block;
+	html.nik .post .post-content-wrapper .post-content p:first-child {
+		display: block;
 	}
-
-	.post .post-content-wrapper .post-category{
-	    position: absolute;
-	    display: block;
-	    bottom: 0px;
-	    left: 0;
-	    right: 0;
-	    height: 30px;
-	    font-size: 0.8em;
+	html.nik .post .post-content-wrapper .post-category {
+		position: absolute;
+		display: block;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		height: 30px;
+		font-size: 0.8em;
 	}
-
-	#nav-pagination {
+	html.nik #nav-pagination {
 		margin-top: 15px;
 	}
-
-	#nav-pagination a.page-numbers, 
-	#nav-pagination a.prev.page-numbers,
-	#nav-pagination a.next.page-numbers,
-	#nav-pagination span.page-numbers.current {
-	    padding: 2px 10px;
-    	font-weight: 400;
-    	font-size: 0.9em;
+	html.nik #nav-pagination a.page-numbers,
+	html.nik #nav-pagination a.prev.page-numbers,
+	html.nik #nav-pagination a.next.page-numbers,
+	html.nik #nav-pagination span.page-numbers.current {
+		padding: 2px 10px;
+		font-weight: 400;
+		font-size: 0.9em;
 	}
-
-
 	/*  =====================================================
 	        SINGLE POSTS
 	    ===================================================== */
-	.single-post .post-featured-image {
-	    min-height: 270px;
-	    max-height: 270px;
+	html.nik .single-post .post-featured-image {
+		min-height: 270px;
+		max-height: 270px;
 	}
-
-	.single-post .post-header {
-	    margin: 0;
-	    width: 100%;
-	    min-width: 100%;
-	    max-width: 576px;
+	html.nik .single-post .post-header {
+		margin: 0;
+		width: 100%;
+		min-width: 100%;
+		max-width: 576px;
 	}
-	.single-post .post-content {
-	    margin: 0;
-	    padding: 60px 30px;
-	    width: 100%;
-	    min-width: 100%;
-	    max-width: 576px;
+	html.nik .single-post .post-content {
+		margin: 0;
+		padding: 60px 30px;
+		width: 100%;
+		min-width: 100%;
+		max-width: 576px;
 	}
-	.single-post .post-content p {
-	    width: 100%;
+	html.nik .single-post .post-content p {
+		width: 100%;
 	}
-	.single-post .post-category {
-	    width: auto;
-	    bottom: 0;
-	    position: absolute;
-	    left: 0;
-	    right: 0;
-	    margin: 0;
+	html.nik .single-post .post-category {
+		width: auto;
+		bottom: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0;
 	}
-	.single-post .post-footer {
-	    padding: 30px 5px;
+	html.nik .single-post .post-footer {
+		padding: 30px 5px;
 	}
-
-	.single-post .author {
-	    min-width: 100%;
-	    max-width: 420px;
+	html.nik .single-post .author {
+		min-width: 100%;
+		max-width: 420px;
 	}
-
-	.single-post .author-image {
-	    display: block;
-	    width: 50px;
-	    height: 50px;
+	html.nik .single-post .author-image {
+		display: block;
+		width: 50px;
+		height: 50px;
 	}
-
-	.single-post .author-quote {
-	    padding: 1em;
-	    line-height: 1.3em;
-	    max-height: 135px;
-	    font-size: 0.85em;
+	html.nik .single-post .author-quote {
+		padding: 1em;
+		line-height: 1.3em;
+		max-height: 135px;
+		font-size: 0.85em;
 	}
-
-	.single-post .quote {
-	    position: relative;
-	    top: 0px;
-	    width: 170px;
-	    height: auto;
+	html.nik .single-post .quote {
+		position: relative;
+		top: 0px;
+		width: 170px;
+		height: auto;
 	}
-
-	.single-post .quote::after{
-	    position: absolute;
-	    width: 0;
-	    height: 0;
-	    top: 20px;
-	    left: -20px;
-	    right: auto;
-	    bottom: auto;
+	html.nik .single-post .quote::after {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 20px;
+		left: -20px;
+		right: auto;
+		bottom: auto;
 	}
-	.single-post .author-info {
+	html.nik .single-post .author-info {
 		padding: 15px 30px 0 30px;
 	}
-
-
 	/*  =====================================================
 	        FEATURED POSTS
 	    ===================================================== */
-	#featured-posts .single-featured-image {
+	html.nik #featured-posts .single-featured-image {
 		min-height: 260px;
 		max-height: 369px;
 	}
-	#featured-posts .post-category{
+	html.nik #featured-posts .post-category {
 		/* bottom: 10px; */
 	}
-	.featured-double-wrapper{
-	    display: block;
+	html.nik .featured-double-wrapper {
+		display: block;
 	}
-	.single-featured-post {
-	    width: 100%;
-	    min-width: 320px;
-	    max-width: 576px;
+	html.nik .single-featured-post {
+		width: 100%;
+		min-width: 320px;
+		max-width: 576px;
 	}
-	#superbanner_holder {
+	html.nik #superbanner_holder {
 		display: none;
 	}
-	#superbanner {
-		margin: 0 auto ;
+	html.nik #superbanner {
+		margin: 0 auto;
 	}
-	.featured-double-wrapper .row {
+	html.nik .featured-double-wrapper .row {
 		width: 100%;
-	    min-width: 320px;
-	    max-width: 576px;
+		min-width: 320px;
+		max-width: 576px;
 	}
-	.featured-double-wrapper .row .col{
+	html.nik .featured-double-wrapper .row .col {
 		margin-top: 15px;
 		width: 100%;
-	    min-width: 320px;
-	    max-width: 576px;
+		min-width: 320px;
+		max-width: 576px;
 	}
-	.double-featured-post {
-	    width: 100%;
-	    min-height: 262px;
-	    max-height: 262px;
-	    margin: 15px 0;
+	html.nik .double-featured-post {
+		width: 100%;
+		min-height: 262px;
+		max-height: 262px;
+		margin: 15px 0;
 	}
-
-	.double-featured-image{
-	    min-height: 262px;
-	    max-height: 262px;
-	    margin-bottom: -20px;
+	html.nik .double-featured-image {
+		min-height: 262px;
+		max-height: 262px;
+		margin-bottom: -20px;
 	}
-
-	.podcast-featured-post {
-	    width: 100%;
-	    min-height: 262px;
-	    margin: 10px 0;
+	html.nik .podcast-featured-post {
+		width: 100%;
+		min-height: 262px;
+		margin: 10px 0;
 	}
-	.podcast-featured-post:first-child {
-	    margin: 10px 0;
+	html.nik .podcast-featured-post:first-child {
+		margin: 10px 0;
 	}
-	.podcast-featured-post:last-child {
-	    margin: 10px 0;
+	html.nik .podcast-featured-post:last-child {
+		margin: 10px 0;
 	}
-	.podcast-featured-image{
-	    min-height: inherit;
-	    margin-bottom: -30px;
+	html.nik .podcast-featured-image {
+		min-height: inherit;
+		margin-bottom: -30px;
 	}
-
-
 	/*  =====================================================
 	        NEWS POSTS
 	    ===================================================== */
-	#news-section, #news-content {
-		
-	}
-	#news-section > .row {
+	html.nik #news-section,
+	html.nik #news-content {}
+	html.nik #news-section>.row {
 		width: 100%;
 		display: block;
 	}
-
-	#news-section > .row:nth-child(even) {
+	html.nik #news-section>.row:nth-child(even) {
 		float: left;
 		margin-right: 2%;
 	}
-
-	#news-section > .row:nth-child(odd) {
+	html.nik #news-section>.row:nth-child(odd) {
 		float: right;
 	}
-	#news-section > .row:nth-child(6) {
+	html.nik #news-section>.row:nth-child(6) {
 		width: 100%;
 	}
-
-	.news-post.post{
-	    width: 100%;
-	    min-height: 270px;
-	    height: 270px;
-	    margin-top: 15px;
+	html.nik .news-post.post {
+		width: 100%;
+		min-height: 270px;
+		height: 270px;
+		margin-top: 15px;
 	}
-	.news-post.post:first-child{
-	    margin-top: 15px;
+	html.nik .news-post.post:first-child {
+		margin-top: 15px;
 	}
-
-	.news-post a{
-	    min-height: 270px;
+	html.nik .news-post a {
+		min-height: 270px;
 	}
-
-	.news-post .post-title{
-	    font-size: 1.3em;
+	html.nik .news-post .post-title {
+		font-size: 1.3em;
 	}
-
-	.news-post .float-post-content p{
-	    display: none;
-	    padding: 10px;
-	    margin: 0;
+	html.nik .news-post .float-post-content p {
+		display: none;
+		padding: 10px;
+		margin: 0;
 	}
-	.news-post .float-post-content p:first-child{
-	    display: block;
+	html.nik .news-post .float-post-content p:first-child {
+		display: block;
 	}
-
-	.news-featured-image{
-	    min-height: inherit ;
-	    margin-bottom: -30px;
+	html.nik .news-featured-image {
+		min-height: inherit;
+		margin-bottom: -30px;
 	}
-
-
 	/*  =====================================================
 	        PODCAST POSTS
 	    ===================================================== */
-	#podcast-section a.img-link{
-	    min-height: 180px;
+	html.nik #podcast-section a.img-link {
+		min-height: 180px;
 	}
-
-	#podcast-section .blog-post{
+	html.nik #podcast-section .blog-post {
 		max-height: 270px;
 	}
-
-
 	/*  =====================================================
 	        BLOG POSTS
 	    ===================================================== */
-	#blog-section a.img-link{
-	    min-height: 180px;
+	html.nik #blog-section a.img-link {
+		min-height: 180px;
 	}
-
-	.blog-post>.row>.col {
-	    width: 100%;
-	    display: block;
-	    min-width: 100%;
-	    min-height: 0;
+	html.nik .blog-post>.row>.col {
+		width: 100%;
+		display: block;
+		min-width: 100%;
+		min-height: 0;
 	}
-
-
-
 }
