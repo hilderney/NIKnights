@@ -16,8 +16,10 @@ if ( $newsPosts->have_posts() ) :
 		<div class="sub-title hide">
 			<h2 class="cl-light">News Latest Post </h2>
 		</div>	
+		<div class="row">
+			<h3 class="section-title">Últimas Notícias</h3>
+		</div>
 <?php while( $newsPosts->have_posts() ) : $newsPosts->the_post(); ?>
-
 		<div class="row">
 			<div class="col">
 

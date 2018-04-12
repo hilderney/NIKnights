@@ -30,7 +30,7 @@
 				<h2 class="cl-light">Sidebar </h2>
 			</div>
 			
-			<?php get_sidebar(); ?>		
+			<?php get_sidebar(); ?>
 			
 		</section> <!-- end main sidebar -->
 	</div>

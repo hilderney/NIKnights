@@ -4,10 +4,10 @@
 if(is_front_page())
 	$posts_per_page = 3;
 else
-	$posts_per_page = 10;
+	$posts_per_page = ''; // Empty gets the global blog post per page
 $args = array(
 	'post_type'			=> 'post'
-	, 'posts_per_page'	=> $posts_per_page
+	, 'posts_per_page'	=> $posts_per_page 
 	, 'cat' 			=> get_category_by_slug('podcast')->term_id
 );
 
@@ -21,7 +21,10 @@ if ( $podcastPosts->have_posts() ) : ?>
 
 <div id="podcast-section">
 		<div class="sub-title hide">
-			<h2 class="cl-light">Blog</h2>
+			<h2 class="cl-light">Podcasts</h2>
+		</div>
+		<div class="row">
+			<h3 class="section-title">Podcasts</h3>
 		</div>
 
 		<?php while ( $podcastPosts->have_posts() ) : $podcastPosts->the_post();  ?>
@@ -128,12 +131,19 @@ if ( $podcastPosts->have_posts() ) : ?>
 					</div>
 				</div> 
 			</div> <!-- end POST LOOP -->
-			<div class="clear"></div>
-
 		<?php endwhile; ?>
+		<div class="clear"></div>
 
-		<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-		<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+		<div id="nav-pagination">
+			<?php
+			 
+				if (!is_front_page()) :
+					wordpress_custom_pagination($podcastPosts);
+				endif;
+			 ?>
+		</div>
+
+
 
 	</div>
 

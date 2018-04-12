@@ -413,6 +413,19 @@
 	    font-size: 0.8em;
 	}
 
+	#nav-pagination {
+		margin-top: 15px;
+	}
+
+	#nav-pagination a.page-numbers, 
+	#nav-pagination a.prev.page-numbers,
+	#nav-pagination a.next.page-numbers,
+	#nav-pagination span.page-numbers.current {
+	    padding: 2px 10px;
+    	font-weight: 400;
+    	font-size: 0.9em;
+	}
+
 
 	/*  =====================================================
 	        SINGLE POSTS

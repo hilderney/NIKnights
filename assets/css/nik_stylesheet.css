@@ -107,6 +107,38 @@ button.selected:focus, .btn.selected:focus, input[type=button].selected:focus{
     background-color: #E3E4E6  ;
 }
 
+h1 {
+    display: block;
+    font-size: 2em;
+}
+h2 {
+    display: block;
+    font-size: 1.8em;
+}
+h3 {
+    display: block;
+    font-size: 1.6em;
+}
+h4 {
+    display: block;
+    font-size: 1.4em;
+}
+h5 {
+    display: block;
+    font-size: 0.9em;
+}
+h6 {
+    display: block;
+    font-size: 0.8em;
+}
+
+.section-title {
+    margin: 5px auto;
+    padding: 6px 10px;
+    color: #27292f;
+    border-radius: 5px;
+}
+
 
 
 /*	=====================================================
@@ -331,10 +363,10 @@ footer {
 }
 
 #nav-pagination {
-
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
-
-
 #nav-pagination a.page-numbers, 
 #nav-pagination a.prev.page-numbers,
 #nav-pagination a.next.page-numbers,
@@ -349,10 +381,18 @@ footer {
     border: 1px solid rgba(255,255,255,0.1);
 }
 
+#nav-pagination a.page-numbers:hover,
+#nav-pagination a.prev.page-numbers:hover,
+#nav-pagination a.next.page-numbers:hover  {
+    border: 1px solid #faaf0f;
+    /* #3b7eb4; */
+    color: #fff;
+    background-color: rgba(0,0,0,0.25);
+}
 #nav-pagination span.page-numbers.current {
     background: rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    color: #faaf0f
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #faaf0f;
 }
 
 

@@ -16,7 +16,9 @@ if ( $featuredPosts->have_posts() ) :
 	<div class="section-title hide">
 		<h2>Header Featured </h2>
 	</div>	
-		
+	<div class="row">
+		<h3 class="section-title">Destaques</h3>
+	</div>
 		<div class="row">
 
 			<div class="col single-featured-post">
