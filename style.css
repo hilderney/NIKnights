@@ -13,3 +13,10 @@ body.wp-admin{
     background-color: #fff;
     color: #000;
 }
+
+body.wp-admin a, 
+body.wp-admin a:visited, 
+body.wp-admin a:hover, 
+body.wp-admin a:focus {
+	font-size: initial;
+}

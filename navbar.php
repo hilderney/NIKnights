@@ -19,14 +19,22 @@
           <?php echo bloginfo('name'); ?>
         </a>
       </li>
+
+      <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-podcast" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-podcast nav-item">
+        <a class="nav-link" href="<?= bloginfo( 'url' ).'/podcast' ?>" title="Podcast"> Podcast </a>
+      </li>
+
+      <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-blog" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-blog nav-item">
+        <a class="nav-link" href="<?= bloginfo( 'url' ).'/blog' ?>" title="Blog"> Blog </a>
+      </li>
       <?php
       wp_nav_menu( array(
         'theme_location'  => 'header-menu',
         'depth'       => 0, // 1 = with dropdowns, 0 = no dropdowns.
-        'container'     => 'div',
+        'container'     => '',
         'container_class' => 'collapse navbar-collapse',
-        'container_id'    => 'navbar-collapse-1',
-        'menu_class'    => 'navbar-nav mr-auto',
+        'container_id'    => 'navbar-collapse-main-menu',
+        'menu_class'    => 'navbar-nav',
         'fallback_cb'   => 'WP_Bootstrap_Navwalker::fallback',
         'walker'      => new WP_Bootstrap_Navwalker()
         ) );

@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="col">
 				<div class="post-header">
-					<div class="post-featured-image">
+					<div class="post-featured-image bg-image">
 						<style>
 							<?php if(get_the_post_thumbnail()) : ?>
 								#post-<?php the_ID(); ?> .single-post .post-featured-image { background-image: url('<?php  the_post_thumbnail_url(); ?>') 
@@ -56,7 +56,7 @@
 						<div class="author">
 							<div class="row">
 								<div class="col">
-									<div class="author-id-<?php print get_the_author_id(); ?> author-image">
+									<div class="author-id-<?php print get_the_author_id(); ?> author-image bg-image">
 										<style>
 											<?php if(get_avatar_url( get_the_author_id() )) : ?>
 												.author-id-<?php print get_the_author_id(); ?>.author-image { 

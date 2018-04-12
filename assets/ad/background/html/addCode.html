@@ -1,0 +1,75 @@
+<div id="ad-300x250" class="ad"></div>
+<script>
+	jQuery(document).ready(function($) {
+		$( "#ad-300x250" ).load( document.URL + "wp-content/themes/niknights/assets/ad/banner300x250/html/ad-300x250.html", function( response, status, xhr ) {
+			debugger;
+			if ( status == "error" ) {
+				var msg = "Sorry but there was an error: ";
+				$("#ad-300x250").html( msg + xhr.status + " " + xhr.statusText );
+			}
+		});
+	});		
+</script>
+
+
+
+
+
+<div id="ad-300x600" class="ad"></div>
+<script>
+	
+	jQuery(document).ready(function($) {
+		$( "#ad-300x600" ).load( document.URL + "wp-content/themes/niknights/assets/ad/banner300x600/html/ad-300x600.html", function( response, status, xhr ) {
+			debugger;
+			if ( status == "error" ) {
+				var msg = "Sorry but there was an error: ";
+				$("#ad-300x600").html( msg + xhr.status + " " + xhr.statusText );
+			}
+		});
+	});		
+</script>
+
+
+
+
+
+<div id="ad-728x90" class="ad"></div>
+<script>
+	
+	jQuery(document).ready(function($) {
+		$( "#ad-728x90" ).load( document.URL + "wp-content/themes/niknights/assets/ad/superbanner728x90/html/ad-728x90.html", function( response, status, xhr ) {
+			debugger;
+			if ( status == "error" ) {
+				var msg = "Sorry but there was an error: ";
+				$("#ad-728x90").html( msg + xhr.status + " " + xhr.statusText );
+			}
+		});
+	});		
+</script>
+
+
+
+http://nerdignorante.com.br/ni/adm/content/ad/banner300x250/adSample300x250.jpg
+http://nerdignorante.com.br/ni/adm/content/ad/banner300x600/adSample300x600.jpg
+
+
+<script>
+jQuery(document).ready(function(t) {
+	t("#ad-300x250").load("http://nerdignorante.com.br/wp-content/themes/niknights/assets/ad/banner300x250/html/ad-300x250.html", function(e, n, r) {
+		debugger;
+	console.log(e);
+	console.log(n);
+	console.log(r);
+		if ("error" == n) {
+			t("#ad-300x250").html("Sorry but there was an error: " + r.status + " " + r.statusText)
+		}
+	})
+});
+</script>
+
+/wp-content/themes/niknights/assets/ad/banner300x250
+/nerdignorante/wp-content/themes/niknights/assets/ad/banner300x250/html/ad-300x250.html
+
+http://nerdignorante.com.br/wp-content/themes/niknights/assets/ad/banner300x250/html/ad-300x250.html
+
+\wp-content\themes\niknights\assets\ad\banner300x250\html\

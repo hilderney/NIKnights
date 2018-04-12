@@ -22,7 +22,12 @@
 	    height: 100%;
 	    font-size: 16px;
 	    background-size: 100vw 100vh;
-	    padding-top: 50px;
+	    padding-top: 80px;
+	}
+
+	h1 {
+	    font-size: 24px;
+	    margin: 0 auto;
 	}
 
 	div#wpadminbar {
@@ -59,22 +64,22 @@
 	}
 	.main-wrapper{
 		margin: 0 auto;
-		min-width: 576px;
+		min-width: 100%;
 		width: 100%;
-		max-width: 727px;
+		max-width: 100%;
 	}
 
 	.main-container{
 		margin: 0;
 		padding: 0;
-		min-width: 576px;
+		min-width: 100%;
 		width: 100%;
-		max-width: 727px;
+		max-width: 100%;
 	}
 	.main-container.container{
-		min-width: 576px;
+		min-width: 100%;
 		width: 100%;
-		max-width: 727px;	
+		max-width: 100%;	
 	}
 	.main-container .row, .main-container .row .col {
 		margin: 0;
@@ -100,7 +105,7 @@
 	    width: 100%;
 	}
 	#header-featured-col-left{
-		width: 727px;
+		width: 100%;
 		float: left;
 	}
 	#header-featured-post-bot-left{
@@ -136,7 +141,7 @@
 	}
 	#main-sidebar{ 
 		float: right;
-		width: 727px;
+		width: 100%;
 		height: auto;
 	}
 	#sidebar aside {
@@ -170,7 +175,7 @@
 	}
 	ul li, ol li {
 	    margin: 5px 0;
-	    padding: 0 20px;
+	    padding: 0;
 	}
 
 
@@ -196,11 +201,15 @@
 	}
 
 	.navbar-nav ul li{
-	    padding: 0;
+	    padding: 0 20px;
 	}
 
 	.navbar-nav a.nav-link{
 	    padding: 0;
+	}
+
+	.navbar-collapse>.navbar-nav {
+	    padding-top: 30px;
 	}
 
 
@@ -211,8 +220,8 @@
 	#main-content{
 	    float: left;
 	    width: 100%;
-	    min-height: 727px;
-	    min-width: 576px;
+	    min-height: 100%;
+	    min-width: 100%;
 	    max-width: 768px;
 	}
 
@@ -237,7 +246,7 @@
 	.post {
 	    min-height: 200px;
 	    width: 100%;
-	    min-width: 576px;
+	    min-width: 100%;
 	    max-width: 768px;
 	    margin-top: 15px;
 	}
@@ -255,11 +264,12 @@
 	}
 
 	.post-title {
-	    display: block;
-    	max-height: 85px;
-    	width: 100%;
-    	padding: 10px 15px;
-    	font-size: 1.3rem;
+    	display: block;
+    	max-height: 92px;
+	    width: 100%;
+	    padding: 10px 15px;
+	    font-size: 1.15rem;
+	    line-height: 1.1em;
 	}
 
 	.post-content{
@@ -285,6 +295,16 @@
 	    max-height: 160px;
 	}
 
+	.home .post .author .row {
+	    width: inherit;
+    	margin: 0;
+	}
+
+	.single-post .post .author .row {
+	    width: 370px;
+	    margin: 0 auto;
+	}
+
 	.post .author-info{
 	    /* padding: 7.5px 30px; */
 	    font-size: 0.8em;
@@ -295,8 +315,8 @@
 	}
 	.post .author-image {
 	    display: block;
-	    width: 70px;
-	    height: 70px;
+	    width: 60px;
+	    height: 60px;
 	}
 	.author .row .col:last-Child {
 		padding: 0;
@@ -305,14 +325,14 @@
 		    width: fit-content;
 		    margin: 0 auto;
 		    padding: 0.6em 0.5em;
-		    line-height: 1.35em;
-		    max-height: 85px;
-		    font-size: 0.85em;
+		    line-height: 1.30em;
+		    max-height: 90px;
+		    font-size: 0.8em;
 	}
 	.post .quote {
 	    position: relative;
 	    top: 0px;
-	    width: 160px;
+	    width: 140px;
 	    height: auto;
 	    min-height: 70px;
 	    max-height: 140px;
@@ -321,11 +341,16 @@
 	    position: absolute;
 	    width: 0;
 	    height: 0;
-	    top: 30px;
-	    left: -20px;
+	    top: 40px;
+	    left: -15px;
 	    right: auto;
 	    bottom: auto;
-	    border: 12px solid;
+	    border: 10px solid;
+	    box-shadow: none;
+	    border-color: #dddddd #dddddd transparent transparent !important;
+	}
+
+
 	}
 	.post .col:first-child{
 	    padding-right: 0;
@@ -380,14 +405,14 @@
 	.single-post .post-header {
 	    margin: 0;
 	    width: 100%;
-	    min-width: 576px;
+	    min-width: 100%;
 	    max-width: 768px;
 	}
 	.single-post .post-content {
 	    margin: 0;
 	    padding: 60px 30px;
 	    width: 100%;
-	    min-width: 576px;
+	    min-width: 100%;
 	    max-width: 768px;
 	}
 	.single-post .post-content p {
@@ -406,7 +431,7 @@
 	}
 
 	.single-post .author {
-	    min-width: 420px;
+	    min-width: 100%;
 	    max-width: 420px;
 	}
 
@@ -513,12 +538,11 @@
 	        NEWS POSTS
 	    ===================================================== */
 	#news-section, #news-content {
-		height: auto;
-   		display: inline-block;
+		
 	}
 	#news-section > .row {
-		width: 49%;
-		display: inline-block;
+		width: 100%;
+		display: block;
 	}
 
 	#news-section > .row:nth-child(even) {
@@ -530,7 +554,7 @@
 		float: right;
 	}
 	#news-section > .row:nth-child(6) {
-		width: 727px;
+		width: 100%;
 	}
 
 	.news-post.post{

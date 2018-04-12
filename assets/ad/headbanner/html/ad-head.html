@@ -1,10 +1,10 @@
-<div id="ad-nik-img-300x600"></div>
+<div id="ad-head"></div>
 <script>
 	var getUrl = window.location;
 	var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[0];
 	var bUrl = '';
 	(baseUrl.indexOf('localhost') > 0) ? bUrl = baseUrl + getUrl.pathname.split('/')[1] : bUrl = baseUrl;
 	jQuery(document).ready(function($) {
-		$('#ad-nik-img-300x600').html('<img src="' + bUrl + '/wp-content/themes/niknights/assets/ad/banner300x600/img/adSample300x600.jpg" alt="' + '' + '">');
-	});			
+		$('#ad-head').html('<img src="' + bUrl + '/wp-content/themes/niknights/assets/ad/headbanner/img/ad-headSample.jpg" alt="' + '' + '">');
+	});
 </script>

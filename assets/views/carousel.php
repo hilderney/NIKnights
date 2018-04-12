@@ -48,19 +48,10 @@ if ( $query_carousel->have_posts() ) : ?>
 							<?php while ( $query_carousel->have_posts() ) : $query_carousel->the_post(); ?>
 								<div class="carousel-item <?php if ($index == 0) echo 'active'; ?> ">
 									<a href="<?php the_permalink() ?>">
-										<div class="post-<?php the_ID(); ?> carousel-featured-image ">
+										<div class="post-<?php the_ID(); ?> carousel-featured-image bg-image">
 											<div class="post-title">
 												<?php the_title(); ?>
 											</div>
-											<!-- <div class="carousel-content">
-												<?php  /*if (has_excerpt() ): ?>
-													<?php the_excerpt(); ?>
-													<span class="btn read-more">Leia Mais...</span>
-												<?php else : ?>
-													<?php the_content( ' Mais... ')  ?>
-													<span class="btn read-more">Leia Mais...</span>
-												<?php endif; */?>
-											</div> -->
 											<style>
 												<?php if(get_the_post_thumbnail()) : ?>
 													.post-<?php the_ID(); ?>.carousel-featured-image {

@@ -30,7 +30,7 @@ if ( $podcastPosts->have_posts() ) : ?>
 
 					<div class="col">
 						<a href="<?php the_permalink(); ?>">
-							<div class="blog-featured-image">
+							<div class="blog-featured-image bg-image">
 								<style>
 									<?php if(get_the_post_thumbnail()) : ?>
 										.post-<?php the_ID(); ?> .blog-featured-image {

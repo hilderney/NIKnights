@@ -10,7 +10,7 @@
 				<div class="row">
 
 					<div class="col">
-						<div class="blog-featured-image">
+						<div class="blog-featured-image bg-image">
 							<style>
 								<?php if(get_the_post_thumbnail()) : ?>
 									.post-<?php the_ID(); ?> .blog-featured-image {
@@ -37,7 +37,7 @@
 									<div class="author">
 										<div class="row">
 											<div class="col">
-												<div class="author-id-<?php print get_the_author_id(); ?> author-image">
+												<div class="author-id-<?php print get_the_author_id(); ?> author-image bg-image">
 													<style>
 														<?php if(get_avatar_url( get_the_author_id() )) : ?>
 															.author-id-<?php print get_the_author_id(); ?>.author-image { 
@@ -105,9 +105,13 @@
 			</div> <!-- end POST LOOP -->
 
 		<?php endwhile; ?>
+		
+		<div id="nav-pagination">
+			<?php wordpress_pagination(); ?>
+		</div>
 
-		<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-		<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+		<!-- <div class="nav-previous alignleft"><?php //next_posts_link( 'Older posts' ); ?></div>
+		<div class="nav-next alignright"><?php //previous_posts_link( 'Newer posts' ); ?></div> -->
 
 	</div>
 	

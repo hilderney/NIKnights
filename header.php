@@ -14,7 +14,7 @@
 <body <?php body_class(); ?> >
 <header>
 	<?php include('navbar.php'); ?>
-	<section id="head-ad"></section>
+	<section id="ad-head-container"></section>
 </header>
 <div class="main-wrapper">
 	<?php if(is_front_page()): ?>

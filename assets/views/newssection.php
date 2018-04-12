@@ -23,7 +23,7 @@ if ( $newsPosts->have_posts() ) :
 
 				<div class="news-post post post-<?php the_ID(); ?>">
 					<a href="<?php the_permalink(); ?>">
-						<div class="news-featured-image">
+						<div class="news-featured-image bg-image">
 							<div class="post-title">
 								<?php the_title(); ?>
 							</div>

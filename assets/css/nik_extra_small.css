@@ -1,6 +1,5 @@
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
-	
 		html{
 		margin: 0;
     	padding: 0;
@@ -19,10 +18,16 @@
 	    */
 	    display: block;
 	    width: 100%;
+	    min-width: fit-content;
 	    height: 100%;
 	    font-size: 16px;
 	    background-size: 100vw 100vh;
 	    padding-top: 50px;
+	}
+
+	h1 {
+	    font-size: 20px;
+	    margin: 0 auto;
 	}
 
 	div#wpadminbar {
@@ -59,17 +64,32 @@
 	}
 	.main-wrapper{
 		margin: 0 auto;
-		max-width: 576px;
+		min-width: 100%;
+		width: 100%;
+		max-width: 100%;
 	}
 
 	.main-container{
-		margin: 0 auto;
+		margin: 0;
+		padding: 0;
+		min-width: 100%;
 		width: 100%;
-		max-width: 576px;
-		min-width: 576px;
+		max-width: 100%;
+	}
+	.main-container.container{
+		min-width: 100%;
+		width: 100%;
+		max-width: 100%;	
+	}
+	.main-container .row, .main-container .row .col {
+		margin: 0;
+		padding: 0;
 	}
 	section {
-	    margin: 30px 0;
+	    margin: 15px 0;
+	}
+	#carousel-section{
+		display: none;
 	}
 
 
@@ -85,25 +105,25 @@
 	    width: 100%;
 	}
 	#header-featured-col-left{
-		width: 728px;
+		width: 100%;
 		float: left;
 	}
 	#header-featured-post-bot-left{
-		width: 364px;
+		width: 320px;
 		height: 200px;
 		float: left;
 	}
 	#header-featured-post-bot-right{
-		width: 364px;
+		width: 320px;
 		height: 200px;
 		float: right;
 	}
 	#header-featured-col-right{
-		width: 412px;
+		width: 320px;
 		float: right;
 	}
 	#header-featured-post-right-main{
-		width: 412px;
+		width: 320px;
 		height: 290px;
 		float: right;
 	}
@@ -113,28 +133,41 @@
 	/*	=====================================================
 			SIDEBAR 
 		===================================================== */
+	#sidebar{
+		display: block;
+	    margin: 0 auto;
+	    height: auto;
+	    width: 320px;
+	}
 	#main-sidebar{ 
 		float: right;
-		width: 412px;
+		width: 100%;
 		height: auto;
 	}
 	#sidebar aside {
-	    margin: 30px 0;
-	}
-	#sidebar aside:first-child{
-		margin-top: 0;
-	}
-	#sidebar aside:last-child{
-		margin-bottom: 0;
+		width: 320px;
+	    min-height: 320px;
+	    display: inline-block;
+	    margin: 0 0 20px 0;
 	}
 	#sidebar .widget {
 	    padding-bottom: 20px;
 	}
+	#sidebar .widget.widget_categories, #sidebar .widget.widget_archive {
+	    /* display: none !important; */
+	}
 	#sidebar .widget-title {
-	    width: 100%;
+	    width: 320px;
 	    height: 40px;
 	    font-size: 1.2em;
 	    padding: 5px;
+	}
+	#sidebar ul {
+		width: 320px;
+		height: auto;
+	    display: inline-block;
+	    padding: 0;
+	    margin: 0;
 	}
 	#sidebar ul ul, #sidebar ol ol{
 		padding: 0;
@@ -164,15 +197,19 @@
 	}
 
 	.navbar-nav {
-	    font-size: 20px;
+	    font-size: 18px;
 	}
 
 	.navbar-nav ul li{
-	    padding: 0;
+	    padding: 0 20px;
 	}
 
 	.navbar-nav a.nav-link{
 	    padding: 0;
+	}
+
+	.navbar-collapse>.navbar-nav {
+	    padding-top: 30px;
 	}
 
 
@@ -182,8 +219,10 @@
 
 	#main-content{
 	    float: left;
-	    width: 728px;
-	    min-height: 200px;
+	    width: 100%;
+	    min-height: 100%;
+	    min-width: 100%;
+	    max-width: 576px;
 	}
 
 
@@ -205,9 +244,11 @@
 			POSTS
 		===================================================== */
 	.post {
-	    min-height: 200px;
+	    min-height: 285px;
 	    width: 100%;
-	    margin: 15px 0 30px 0;
+	    min-width: 320px;
+	    max-width: 576px;
+	    margin-top: 15px;
 	}
 
 	.post:first-child {
@@ -224,10 +265,11 @@
 
 	.post-title {
 	    display: block;
-	    max-height: 145px;
+	    max-height: 85px;
+	    line-height: 1.1em;
 	    width: 100%;
-	    padding: 15px;
-	    font-size: 1.3rem;
+	    padding: 10px 15px;
+	    font-size: 1.1rem;
 	}
 
 	.post-content{
@@ -236,10 +278,11 @@
 	    display: block;   
 	}
 	.post-category {
-	    position: relative;
+	    position: absolute;
 	    display: block;
 	    bottom: 0px;
-	    width: 100%;
+	    left: 0;
+	    right: 0;
 	    height: 30px;
 	    padding: 5px 15px;
 	    text-align: right;
@@ -254,7 +297,13 @@
 
 	.post .author-info{
 	    /* padding: 7.5px 30px; */
-	    font-size: 0.8em;
+	    font-size: 0.9em;
+	}
+	.page .author-info,
+	.archive .author-info,
+	.category .author-info,
+	.blog .author-info{
+		text-shadow: 1px 1px 3px rgba(0,0,0,0.85);
 	}
 
 	.post .author-data {
@@ -262,29 +311,46 @@
 	}
 	.post .author-image {
 	    display: block;
-	    width: 80px;
-	    height: 80px;
+	    width: 50px;
+	    height: 50px;
+	    margin-top: 7px;
+	}
+	.author .row .col:last-Child {
+		padding: 0;
 	}
 	.post .author-quote {
 		width: fit-content;
-    	margin: 0 auto;
-	    padding: 1em 0.5em;
-	    line-height: 1.5em;
-	    max-height: 140px;
+		margin: 0 auto;
+		padding: 0.6em 0.5em;
+		line-height: 1.35em;
+		max-height: 85px;
+		font-size: 0.85em;
+	}
+	.page .post .author-name,
+	.archive .post .author-name,
+	.category .post .author-name,
+	.blog .post .author-name {
+		color: #faaf0f;
+	}
+	.page .post .author-twitter,
+	.archive .post .author-twitter,
+	.category .post .author-twitter,
+	.blog .post .author-twitter {
+	    color: #faaf0f;
 	}
 	.post .quote {
 	    position: relative;
 	    top: 0px;
-	    width: 190px;
+	    width: 140px;
 	    height: auto;
-	    min-height: 80px;
+	    min-height: 70px;
 	    max-height: 140px;
 	}
 	.post .quote::after{
 	    position: absolute;
 	    width: 0;
 	    height: 0;
-	    top: 40px;
+	    top: 30px;
 	    left: -20px;
 	    right: auto;
 	    bottom: auto;
@@ -303,11 +369,27 @@
 	    margin-bottom: 0;
 	}
 	.post .post-content-wrapper{
-	    max-height: 320px;
+	    min-height: 285px;
+	    max-height: 285px;
+	    min-width: 320px;
+	    background: linear-gradient( 
+	    	transparent , 
+	    	rgba(0, 0, 0, 0.35) , 
+	    	rgba(0, 0, 0, 0.35) , 
+	    	transparent ) !important;
+	}
+	.post .post-content-wrapper .post-content p {
+		color:#fff;
 	}
 	.post .blog-featured-image {
-	    min-height: 320px;
-	    max-height: 320px;
+	    min-height: 270px;
+	    max-height: 285px;
+	    position: absolute;
+	    width: 100%;
+	    min-width: 320px;
+	    height: 285px;
+	    left: 0;
+	    right: 0;
 	}
 	.post .post-content-wrapper .post-content{
 	    max-height: 229px;
@@ -325,8 +407,8 @@
 	    position: absolute;
 	    display: block;
 	    bottom: 0px;
-	    right: 15px;
-	    width: 364px;
+	    left: 0;
+	    right: 0;
 	    height: 30px;
 	    font-size: 0.8em;
 	}
@@ -336,50 +418,60 @@
 	        SINGLE POSTS
 	    ===================================================== */
 	.single-post .post-featured-image {
-	    min-height: 320px;
-	    max-height: 320px;
+	    min-height: 270px;
+	    max-height: 270px;
 	}
 
 	.single-post .post-header {
-	    margin: 0 15px;
+	    margin: 0;
+	    width: 100%;
+	    min-width: 100%;
+	    max-width: 576px;
 	}
 	.single-post .post-content {
-	    margin: 0 15px;
+	    margin: 0;
 	    padding: 60px 30px;
-	    width: auto;
+	    width: 100%;
+	    min-width: 100%;
+	    max-width: 576px;
 	}
 	.single-post .post-content p {
 	    width: 100%;
 	}
 	.single-post .post-category {
 	    width: auto;
-	    top: 229px;
+	    bottom: 0;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    margin: 0;
 	}
 	.single-post .post-footer {
-	    padding: 30px 20px;
+	    padding: 30px 5px;
 	}
 
 	.single-post .author {
-	    min-width: 420px;
+	    min-width: 100%;
 	    max-width: 420px;
 	}
 
 	.single-post .author-image {
 	    display: block;
-	    width: 80px;
-	    height: 80px;
+	    width: 50px;
+	    height: 50px;
 	}
 
 	.single-post .author-quote {
 	    padding: 1em;
-	    line-height: 1.5em;
-	    max-height: 140px;
+	    line-height: 1.3em;
+	    max-height: 135px;
+	    font-size: 0.85em;
 	}
 
 	.single-post .quote {
 	    position: relative;
 	    top: 0px;
-	    width: 250px;
+	    width: 170px;
 	    height: auto;
 	}
 
@@ -387,7 +479,7 @@
 	    position: absolute;
 	    width: 0;
 	    height: 0;
-	    top: 40px;
+	    top: 20px;
 	    left: -20px;
 	    right: auto;
 	    bottom: auto;
@@ -400,21 +492,37 @@
 	/*  =====================================================
 	        FEATURED POSTS
 	    ===================================================== */
+	#featured-posts .single-featured-image {
+		min-height: 260px;
+		max-height: 369px;
+	}
+	#featured-posts .post-category{
+		/* bottom: 10px; */
+	}
 	.featured-double-wrapper{
-	    margin-top: 30px;   
+	    display: block;
 	}
 	.single-featured-post {
 	    width: 100%;
-	    min-height: 382px;
-	    max-height: 382px;
+	    min-width: 320px;
+	    max-width: 576px;
 	}
-	.single-featured-post a{
-	    min-height: 283px;
+	#superbanner_holder {
+		display: none;
 	}
-	.single-featured-image{
-	    min-height: 382px;
-	    max-height: 382px;
-	    margin-bottom: -30px;
+	#superbanner {
+		margin: 0 auto ;
+	}
+	.featured-double-wrapper .row {
+		width: 100%;
+	    min-width: 320px;
+	    max-width: 576px;
+	}
+	.featured-double-wrapper .row .col{
+		margin-top: 15px;
+		width: 100%;
+	    min-width: 320px;
+	    max-width: 576px;
 	}
 	.double-featured-post {
 	    width: 100%;
@@ -426,19 +534,19 @@
 	.double-featured-image{
 	    min-height: 262px;
 	    max-height: 262px;
-	    margin-bottom: -30px;
+	    margin-bottom: -20px;
 	}
 
 	.podcast-featured-post {
 	    width: 100%;
 	    min-height: 262px;
-	    margin: 15px 0;
+	    margin: 10px 0;
 	}
 	.podcast-featured-post:first-child {
-	       margin: 15px 0;
+	    margin: 10px 0;
 	}
 	.podcast-featured-post:last-child {
-	       margin: 15px 0;
+	    margin: 10px 0;
 	}
 	.podcast-featured-image{
 	    min-height: inherit;
@@ -449,24 +557,47 @@
 	/*  =====================================================
 	        NEWS POSTS
 	    ===================================================== */
+	#news-section, #news-content {
+		
+	}
+	#news-section > .row {
+		width: 100%;
+		display: block;
+	}
+
+	#news-section > .row:nth-child(even) {
+		float: left;
+		margin-right: 2%;
+	}
+
+	#news-section > .row:nth-child(odd) {
+		float: right;
+	}
+	#news-section > .row:nth-child(6) {
+		width: 100%;
+	}
+
 	.news-post.post{
 	    width: 100%;
-	    min-height: 364px;
-	    height: 364px;
-	    margin: 15px 0;
+	    min-height: 270px;
+	    height: 270px;
+	    margin-top: 15px;
+	}
+	.news-post.post:first-child{
+	    margin-top: 15px;
 	}
 
 	.news-post a{
-	    min-height: 364px;
+	    min-height: 270px;
 	}
 
 	.news-post .post-title{
-	    font-size: 1.5em;
+	    font-size: 1.3em;
 	}
 
 	.news-post .float-post-content p{
 	    display: none;
-	    padding:10px;
+	    padding: 10px;
 	    margin: 0;
 	}
 	.news-post .float-post-content p:first-child{
@@ -486,6 +617,10 @@
 	    min-height: 180px;
 	}
 
+	#podcast-section .blog-post{
+		max-height: 270px;
+	}
+
 
 	/*  =====================================================
 	        BLOG POSTS
@@ -493,5 +628,14 @@
 	#blog-section a.img-link{
 	    min-height: 180px;
 	}
+
+	.blog-post>.row>.col {
+	    width: 100%;
+	    display: block;
+	    min-width: 100%;
+	    min-height: 0;
+	}
+
+
 
 }

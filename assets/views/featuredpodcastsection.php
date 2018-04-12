@@ -22,7 +22,7 @@ if ( $featuredPosts->have_posts() ) :
 			<div class="col">
 				<div class="single-featured-post post post-<?php the_ID(); ?>">
 					<a href="<?php the_permalink(); ?>">
-						<div class="single-featured-image">
+						<div class="single-featured-image bg-image">
 							<div class="post-title">
 								<?php the_title(); ?>
 							</div>
@@ -92,7 +92,7 @@ if ( $featuredPosts->have_posts() ) :
 						<div class="col">
 							<div class="double-featured-post post post-<?php the_ID(); ?>">
 								<a href="<?php the_permalink(); ?>">
-									<div class="double-featured-image">
+									<div class="double-featured-image bg-image">
 										<div class="post-title">
 											<?php the_title(); ?>
 										</div>
@@ -131,7 +131,7 @@ if ( $featuredPosts->have_posts() ) :
 						<div class="col">
 							<div class="double-featured-post post post-<?php the_ID(); ?>">
 								<a href="<?php the_permalink(); ?>">
-									<div class="double-featured-image">
+									<div class="double-featured-image bg-image">
 										<div class="post-title">
 											<?php the_title(); ?>
 										</div>
