@@ -45,6 +45,41 @@ This site was created for the Nerd Ignorante [Nerd Ignorante](www.nerdignorante.
 	- 1.0 Steak
 		- still Frying
 
+
+# Ad System
+- Ad Slots
+	- Superbanner 728x90
+		- Path: \assets\ad\superbanner728x90\html\$title$-728x90.html
+		- Images: \assets\ad\superbanner728x90\img\$title$-728x90.html
+	- Banner 300x250
+		- Path: \assets\ad\banner300x250\html\$title$-300x250.html
+		- Images: \assets\ad\banner300x250\img\$title$-300x250.html
+	- Banner 300x600
+		- Path: \assets\ad\banner300x600\html\$title$-300x600.html
+		- Images: \assets\ad\banner300x600\img\$title$-300x600.html
+	- Headbanner ???x???
+		- Path: \assets\ad\banner ###### \html\$title$- ###### .html
+		- Images: \assets\ad\banner ###### \img\$title$- ###### .html
+	- Background Ad
+		- Tiny 576x???
+			- Path: \assets\ad\background\html\$title$-bg.html
+			- Images: \assets\ad\background\img\$title$Tiny.html
+		- Small - 768x???
+			- Path: \assets\ad\background\html\$title$-bg.html
+			- Images: \assets\ad\background\img\$title$Small.html
+		- Medium - 992x???
+			- Path: \assets\ad\background\html\$title$-bg.html
+			- Images: \assets\ad\background\img\$title$Medium.html
+		- Large - 1200x???
+			- Path: \assets\ad\background\html\$title$-bg.html
+			- Images: \assets\ad\background\img\$title$Large.html
+		- ExtraLarge - 2560x???
+			- Path: \assets\ad\background\html\$title$-bg.html
+			- Images: \assets\ad\background\img\$title$ExtraLarge.html
+		- 4k - 3840x???
+			- Path: \assets\ad\background\html\$title$-bg.html
+			- Images: \assets\ad\background\img\$title$4k.html
+
 <!-- - [Conferences](#conferences)
   - [Chain React Conf - USA](#chain-react-conf---usa)
 

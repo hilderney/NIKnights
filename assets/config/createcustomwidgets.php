@@ -347,6 +347,7 @@ class nik_ad_bg extends WP_Widget {
     echo $args['before_widget'] . $args['before_title'] . ' ' . $args['after_title']; ?>
   
     <div id="ad-bg" class="ad hide"></div>
+    <input id="bgAdTitle" type="hidden" value="<?php echo($instance[ 'title' ]); ?>;">
     <script>
       var baseUrl = window.location.protocol + "//" +  window.location.host + "/" +  window.location.pathname.split('/')[0];
       var url = '';
