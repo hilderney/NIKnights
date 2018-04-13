@@ -8,9 +8,9 @@ html.nik html {
 
 html.nik body {
     background-color: #3A3C45;
-    color: #e3e4e6;
-    /* background-repeat: no-repeat; 
-    font-family: 'arial'; */
+    color: #E3E4E6;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
 }
 
 html.nik body.admin-bar {
@@ -48,7 +48,7 @@ html.nik .blog a:visited,
 html.nik .blog a:hover,
 html.nik .blog a:focus {
     text-decoration: none;
-    color: #e3e4e6;
+    color: #E3E4E6;
 }
 
 html.nik .archive a,
@@ -56,7 +56,7 @@ html.nik .archive a:visited,
 html.nik .archive a:hover,
 html.nik .archive a:focus {
     text-decoration: none;
-    color: #e3e4e6;
+    color: #E3E4E6;
 }
 
 html.nik .home a,
@@ -64,7 +64,7 @@ html.nik .home a:visited,
 html.nik .home a:hover,
 html.nik .home a:focus {
     text-decoration: none;
-    color: #e3e4e6;
+    color: #E3E4E6;
 }
 
 html.nik .page a,
@@ -72,7 +72,7 @@ html.nik .page a:visited,
 html.nik .page a:hover,
 html.nik .page a:focus {
     text-decoration: none;
-    color: #e3e4e6;
+    color: #E3E4E6;
     box-shadow: none;
 }
 
@@ -81,7 +81,7 @@ html.nik .single a:visited,
 html.nik .single a:hover,
 html.nik .single a:focus {
     text-decoration: none;
-    color: #e3e4e6;
+    color: #E3E4E6;
     box-shadow: none;
 }
 
@@ -174,28 +174,29 @@ html.nik h1 {
 
 html.nik h2 {
     display: block;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 html.nik h3 {
     display: block;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 html.nik h4 {
     display: block;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 html.nik h5 {
     display: block;
-    font-size: 0.9em;
-    color: black;
+    font-size: 0.1em;
+    color: #4466AA;
 }
 
 html.nik h6 {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.1em;
+    color: #DDAA15;
 }
 
 html.nik .section-title {
@@ -232,24 +233,24 @@ html.nik #sidebar .widget {
 html.nik #sidebar .widget-title {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
-    color: #FAAF0F;
+    color: #DDAA15;
     font-weight: 500;
 }
 
 html.nik #sidebar .widget-title a {
-    color: #FAAF0F;
+    color: #DDAA15;
 }
 
 html.nik #sidebar ul ul,
 html.nik #sidebar ol ol {
-    list-style: none;
+    list-style: inherit;
 }
 
 html.nik ul,
 html.nik ul li,
 html.nik ol,
 html.nik ol li {
-    list-style: none;
+    list-style: inherit;
 }
 
 html.nik ul li,
@@ -284,11 +285,14 @@ html.nik .navbar-nav ul li {
 
 html.nik .navbar-nav a.nav-link {
     color: inherit;
+    padding: 0;
 }
 
 html.nik .navbar ul li,
 html.nik .navbar ul ul li {
-    padding: 8px;
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
 }
 
 html.nik .navbar ul li:hover {
@@ -367,7 +371,7 @@ html.nik .post-category a,
 html.nik .post-category a:visited,
 html.nik .post-category a:hover {
     text-decoration: none;
-    color: #FAAF0F;
+    color: #DDAA15;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -378,13 +382,13 @@ html.nik .post .author-image {
 }
 
 html.nik .post .author-name {
-    color: #427FB4;
+    color: #4466AA;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 html.nik .post .author-twitter {
-    color: #427FB4;
+    color: #4466AA;
     font-weight: 500;
     text-transform: lowercase;
 }
@@ -444,7 +448,7 @@ html.nik .post-content-wrapper .post-category,
 html.nik .post-content-wrapper .post-category a,
 html.nik .post-content-wrapper .post-category a:visited,
 html.nik .post-content-wrapper .post-category a:hover {
-    color: #FAAF0F;
+    color: #DDAA15;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -475,7 +479,7 @@ html.nik #nav-pagination span.page-numbers.current {
 html.nik #nav-pagination a.page-numbers:hover,
 html.nik #nav-pagination a.prev.page-numbers:hover,
 html.nik #nav-pagination a.next.page-numbers:hover {
-    border: 1px solid #faaf0f;
+    border: 1px solid #DDAA15;
     /* #3b7eb4; */
     color: #fff;
     background-color: rgba(0, 0, 0, 0.25);
@@ -484,7 +488,7 @@ html.nik #nav-pagination a.next.page-numbers:hover {
 html.nik #nav-pagination span.page-numbers.current {
     background: rgba(0, 0, 0, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.5);
-    color: #faaf0f;
+    color: #DDAA15;
 }
 
 
@@ -503,12 +507,12 @@ html.nik .single-post.post {
 }
 
 html.nik .single-post .post-header {
-    /* background-color: #f8f9fa; */
+    /* background-color: #E3E4E6; */
     /* background-color: rgba(248, 249, 250, 0.95); */
 }
 
 html.nik .single-post .post-content {
-    /* background-color: #f8f9fa; */
+    /* background-color: #E3E4E6; */
     /* background-color: rgba(248, 249, 250, 0.95); */
 }
 
@@ -519,7 +523,7 @@ html.nik .single-post .post-content p {
 
 html.nik .single-post .post-category {
     text-decoration: none;
-    color: #FAAF0F;
+    color: #DDAA15;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -551,6 +555,160 @@ html.nik .single-post .quote::after {
     border: 12px solid;
     border-color: transparent #dddddd #dddddd transparent !important;
     box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.7);
+}
+
+html.nik .single-post .post-content,
+html.nik .single-post .post-content p {
+    color: #3A3C45;
+    font-size: 1em;
+}
+
+html.nik .single-post .post-content a {
+    color: #4466AA;
+    font-weight: 700;
+}
+
+html.nik .single-post .post-content del {
+    color: rgba(58, 60, 69, 0.35);
+    font-weight: 100;
+}
+
+html.nik .single-post .post-content strong {
+    color: #3A3C45;
+    font-weight: 900;
+}
+
+html.nik .single-post .post-content em {
+    color: #3A3C45;
+    font-weight: 300;
+}
+
+html.nik .single-post .post-content pre {
+    color: #999999;
+    font-weight: 100;
+    font-family: monospace;
+}
+
+/* 
+    Cabeçalhos 1, 2, 3 e 4
+*/
+html.nik .single-post .post-content h1,
+html.nik .single-post .post-content h2,
+html.nik .single-post .post-content h3,
+html.nik .single-post .post-content h4 {
+    color: #3A3C45;
+}
+
+html.nik .single-post .post-content h1 {
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+html.nik .single-post .post-content h2 {
+    font-weight: 400;
+    font-size: 1.6em;
+}
+
+html.nik .single-post .post-content h3 {
+    font-weight: 400;
+    font-size: 1.4em;
+}
+html.nik .single-post .post-content h4 {
+    font-weight: 900;
+    font-size: 0.7em;
+}
+/* 
+    Cabeçalhos 5
+*/
+html.nik .single-post .post-content h5,
+html.nik .single-post .post-content h5 strong,
+html.nik .single-post .post-content h5 em,
+html.nik .single-post .post-content h5 pre {
+    color: #4466AA;
+    font-weight: 400;
+    font-size: 1em;
+}
+html.nik .single-post .post-content h5 del {
+    color: rgba(66, 126, 180, 0.35);
+}
+html.nik .single-post .post-content h5 a {
+    color: #DDAA15;
+}
+
+/* 
+    Cabeçalhos 6
+*/
+html.nik .single-post .post-content h6,
+html.nik .single-post .post-content h6 strong,
+html.nik .single-post .post-content h6 em,
+html.nik .single-post .post-content h6 pre {
+    color: #DDAA15;
+    font-weight: 400;
+    font-size: 1em;
+}
+html.nik .single-post .post-content h6 del {
+    color: rgba(66, 126, 180, 0.35);
+}
+html.nik .single-post .post-content h6 a {
+    color: #4466AA;
+}
+/* 
+    Listas
+*/
+html.nik .single-post .post-content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #3a3c45;
+    font-weight: 600;
+}
+html.nik .single-post .post-content ul li ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    color: #555555;
+    font-weight: 400;
+}
+html.nik .single-post .post-content ul li ul li ul {
+    list-style-type: square;
+    list-style-position: inside;
+    color: #888888;
+    font-weight: 400;
+}
+html.nik .single-post .post-content ul li ul li ul li ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #888888;
+    font-weight: 400;
+}
+html.nik .single-post .post-content ul,
+html.nik .single-post .post-content ul li,
+html.nik .single-post .post-content ol,
+html.nik .single-post .post-content ol li {
+    margin: 0 0.6em;
+    padding: 0;
+}
+html.nik .single-post .post-content ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    color: #3a3c45;
+    font-weight: 600;
+}
+html.nik .single-post .post-content ol li ol {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+    color: #555555;
+    font-weight: 400;
+}
+html.nik .single-post .post-content ol li ol li ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    color: #888888;
+    font-weight: 400;
+}
+html.nik .single-post .post-content ol li ol li ol li ol {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #888888;
+    font-weight: 400;
 }
 
 
