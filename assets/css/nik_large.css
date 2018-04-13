@@ -83,7 +83,7 @@
 		width: 992px;
 	}
 	html.nik section {
-		margin: 30px 0;
+		margin: 2.5em 0;
 	}
 	/*	=====================================================
 			FEATURED HEADER 
@@ -135,7 +135,7 @@
 		margin-bottom: 0;
 	}
 	html.nik #sidebar .widget {
-		padding-bottom: 20px;
+		padding-bottom: 40px;
 	}
 	html.nik #sidebar .widget-title {
 		width: 100%;

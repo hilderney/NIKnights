@@ -14,9 +14,6 @@
 	<div class="sub-title hide">
 		<h2 class="cl-light">Podcasts</h2>
 	</div>
-	<div class="row">
-		<h3 class="section-title">Podcasts</h3>
-	</div>
 	<?php while ( $podcastPosts->have_posts() ) : $podcastPosts->the_post();  ?>
 	<div class="blog-post post post-<?php the_ID(); ?>">
 		<div class="row">

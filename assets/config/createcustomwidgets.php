@@ -160,7 +160,7 @@ class nik_ad_728x90 extends WP_Widget {
       <input type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $title ); ?>" />
       <br>
       <span>
-        Título da Campanha deve ser o nome do arquivo HTML em "assets/ad/banner300x600/html/$título$.html"
+        Título da Campanha deve ser o nome do arquivo HTML em "assets/ad/banner728x90/html/$título$.html"
       </span>
     </p><?php
   }
@@ -347,7 +347,7 @@ class nik_ad_bg extends WP_Widget {
     echo $args['before_widget'] . $args['before_title'] . ' ' . $args['after_title']; ?>
   
     <div id="ad-bg" class="ad hide"></div>
-    <input id="bgAdTitle" type="hidden" value="<?php echo($instance[ 'title' ]); ?>;">
+    <input id="bgAdTitle" type="hidden" value="<?= $instance[ 'title' ] ?>">
     <script>
       var baseUrl = window.location.protocol + "//" +  window.location.host + "/" +  window.location.pathname.split('/')[0];
       var url = '';
@@ -371,7 +371,7 @@ class nik_ad_bg extends WP_Widget {
       <input type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $title ); ?>" />
       <br>
       <span>
-        Título da Campanha deve ser o nome do arquivo HTML em "assets/ad/banner728x90_rnd/html/$título$.html"
+        Título da Campanha deve ser o nome do arquivo HTML em "assets/ad/background/html/$título$.html"
       </span>
     </p><?php
   }

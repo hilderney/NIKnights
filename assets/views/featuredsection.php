@@ -13,9 +13,6 @@
 		<h2>Header Featured </h2>
 	</div>
 	<div class="row">
-		<h3 class="section-title">Destaques</h3>
-	</div>
-	<div class="row">
 		<div class="col single-featured-post">
 			<div class="single-featured-post post post-<?php the_ID(); ?>">
 				<a href="<?php the_permalink(); ?>">

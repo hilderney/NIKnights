@@ -10,10 +10,7 @@
 		$featuredPosts->the_post(); ?>
 <div id="featured-posts">
 	<div class="section-title hide">
-		<h2>Header Featured </h2>
-	</div>
-	<div class="row">
-		<h3 class="section-title">Últimos Podcasts</h3>
+		<h2> Header Featured </h2>
 	</div>
 	<div class="row">
 		<div class="col">

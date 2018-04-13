@@ -11,9 +11,6 @@
 	<div class="sub-title hide">
 		<h2 class="cl-light">News Latest Post </h2>
 	</div>
-	<div class="row">
-		<h3 class="section-title">Últimas Notícias</h3>
-	</div>
 	<?php while( $newsPosts->have_posts() ) : $newsPosts->the_post(); ?>
 	<div class="row ">
 		<div class="col">
@@ -43,7 +40,7 @@
 							if ($i >= 0 && $i < count($categories)) {
 								if ($hasnt_cat) {
 									if ($categories[$i]->slug != 'destaque' && $categories[$i]->slug != 'sem-categoria') {
-										echo '<a href="' . get_category_link( $categories[$i]->cat_ID ) . '">' . $categories[$i]->name . '</a>';	
+										echo '<a href="' . get_category_link( $categories[$i]->cat_ID ) . '">' . $categories[$i]->name . '</a>';
 										$hasnt_cat = false;
 									}
 								}

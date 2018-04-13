@@ -139,6 +139,14 @@ html.nik .cl-light {
     color: #E3E4E6;
 }
 
+html.nik .cl-gray {
+    color: #888888;
+}
+
+html.nik .cl-darkgray {
+    color: #555555;
+}
+
 html.nik .bg-white {
     background-color: #FFFFFFF;
 }
@@ -165,6 +173,14 @@ html.nik .bg-title {
 
 html.nik .bg-light {
     background-color: #E3E4E6;
+}
+
+html.nik .bg-gray {
+    background-color: #888888;
+}
+
+html.nik .bg-darkgray {
+    background-color: #555555;
 }
 
 html.nik h1 {
@@ -202,7 +218,7 @@ html.nik h6 {
 html.nik .section-title {
     margin: 5px auto;
     padding: 6px 10px;
-    color: #27292f;
+    color: #888888;
     border-radius: 5px;
 }
 

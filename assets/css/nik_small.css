@@ -103,8 +103,8 @@
 		margin: 0;
 		padding: 0;
 	}
-	section {
-		margin: 15px 0;
+	html.nik section {
+		margin: 2em 0;
 	}
 	html.nik #carousel-section {
 		display: none;
@@ -169,7 +169,7 @@
 		margin: 0 0 20px 0;
 	}
 	html.nik #sidebar .widget {
-		padding-bottom: 20px;
+		padding-bottom: 40px;
 	}
 	html.nik #sidebar .widget.widget_categories,
 	html.nik #sidebar .widget.widget_archive {
