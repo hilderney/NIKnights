@@ -1,7 +1,5 @@
 <?php
-/*
-		CRIANDO AS CATEGORIAS PADRONIZADAS
-*/
+/*	CRIANDO AS CATEGORIAS PADRONIZADAS	*/
 function insert_category_podcast() {
 	wp_insert_term(
 		'Podcast'

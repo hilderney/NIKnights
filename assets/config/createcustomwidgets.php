@@ -329,15 +329,61 @@ class nik_ad_728x90_rnd extends WP_Widget {
   }
 }
 
-/*
-  =====================================================
-    AD Head Banner Ad 1200px 992px 768px 576px
-  =====================================================
-*/
 
 /*
   =====================================================
     AD Background Ad 100%
+  =====================================================
+*/
+class nik_ad_bg extends WP_Widget {
+  // Set up the widget name and description.
+  public function __construct() {
+    $widget_options = array( 'classname' => 'ad_bg hide', 'description' => 'Usa o código de anúncios internos do site' );
+    parent::__construct( 'ad_bg', 'AD Background', $widget_options );
+  }
+  // Create the widget output.
+  public function widget( $args, $instance ) {
+    $title = apply_filters( 'widget_title', $instance[ 'title' ] );
+    echo $args['before_widget'] . $args['before_title'] . ' ' . $args['after_title']; ?>
+  
+    <div id="ad-bg" class="ad hide"></div>
+    <script>
+      var baseUrl = window.location.protocol + "//" +  window.location.host + "/" +  window.location.pathname.split('/')[0];
+      var url = '';
+      (baseUrl.indexOf('localhost') > 0) ? url = baseUrl + window.location.pathname.split('/')[1] : url = baseUrl;
+      jQuery(document).ready(function($) {
+        $( "#ad-bg" ).load( url + "/wp-content/themes/niknights/assets/ad/background/html/<?= $title ?>-bg.html", function( response, status, xhr ) {
+          if ( status == "error" ) {
+            var msg = "Sorry but there was an error: ";
+            $("#ad-bg").html( msg + xhr.status + " " + xhr.statusText );
+          }
+        });
+      });
+    </script>
+    <?php echo $args['after_widget'];
+  }
+  // Create the admin area widget settings form.
+  public function form( $instance ) {
+    $title = ! empty( $instance['title'] ) ? $instance['title'] : ''; ?>
+    <p>
+      <label for="<?php echo $this->get_field_id( 'title' ); ?>">Título da Campanha:</label>
+      <input type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $title ); ?>" />
+      <br>
+      <span>
+        Título da Campanha deve ser o nome do arquivo HTML em "assets/ad/banner728x90_rnd/html/$título$.html"
+      </span>
+    </p><?php
+  }
+  // Apply settings to the widget instance.
+  public function update( $new_instance, $old_instance ) {
+    $instance = $old_instance;
+    $instance[ 'title' ] = strip_tags( $new_instance[ 'title' ] );
+    return $instance;
+  }
+}
+/*
+  =====================================================
+    AD Head Banner Ad 1200px 992px 768px 576px
   =====================================================
 */
 
@@ -356,6 +402,7 @@ function nik_register_ad_widget() {
   register_widget( 'nik_ad_300x250_rnd' );
   register_widget( 'nik_ad_300x600_rnd' );
   register_widget( 'nik_ad_728x90_rnd' );
+  register_widget( 'nik_ad_bg' );
 }
 
 add_action( 'widgets_init', 'nik_register_ad_widget' );

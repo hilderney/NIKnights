@@ -43,7 +43,7 @@
 		<!-- END POST HEADER -->
 		<div class="row">
 			<div class="col">
-				<div class="post-content bg-light">								
+				<div class="post-content">								
 					<?php the_content(); ?>
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 		<!-- END POST CONTENT -->
 		<div class="row">
 			<div class="col">
-				<div class="post-footer bg-light">
+				<div class="post-footer">
 					<div class="author-widget">
 						<div class="author">
 							<div class="row">

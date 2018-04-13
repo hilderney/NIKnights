@@ -21,8 +21,17 @@
 		min-width: fit-content;
 		height: 100%;
 		font-size: 16px;
-		background-size: 100vw 100vh;
 		padding-top: 50px;
+	}
+	html.nik body.admin-bar {
+    	margin-top: 0 !important;
+	}
+
+	html.nik body.admin-bar nav.navbar {
+	    top: 0 !important;
+	}
+	html.nik div#wpadminbar {
+	    display: none;
 	}
 	html.nik h1 {
 		font-size: 20px;
@@ -157,7 +166,6 @@
 	html.nik #sidebar aside {
 		width: 320px;
 		min-height: 320px;
-		display: inline-block;
 		margin: 0 0 20px 0;
 	}
 	html.nik #sidebar .widget {

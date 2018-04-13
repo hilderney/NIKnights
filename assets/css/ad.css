@@ -5,18 +5,15 @@ html.nik #superbanner {
     border-radius: 5px;
     overflow: hidden;
 }
-
 html.nik .widget div{
 	text-align: center;
 	margin: 0 auto;
 }
-
 html.nik .widget .textwidget {
     width: 300px;
     margin: 20px auto;
     text-align: center;
 }
-
 html.nik .widget ul li{
 	text-align: left;
 }

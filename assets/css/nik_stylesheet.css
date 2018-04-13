@@ -21,6 +21,16 @@ html.nik body.admin-bar nav.navbar {
     top: 32px !important;
 }
 
+@media screen and (max-width: 782px) {
+    html.nik body.admin-bar {
+        margin-top: 46px !important;
+    }
+
+    html.nik body.admin-bar nav.navbar {
+        top: 46px !important;
+    }
+} /*  CORRECAO DO  TAMANHO DO admin-bar: ;*/
+
 html.nik div#wpadminbar {
     display: block;
 }
@@ -201,7 +211,7 @@ html.nik .section-title {
     ===================================================== */
 
 html.nik #sidebar aside {
-    background: rgba(0, 0, 0, 0.10);
+    background-color: rgba(48,50,59,.95);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: -1px 1px 10px -1px rgba(0, 0, 0, 0.35);
@@ -312,7 +322,7 @@ html.nik footer {
 html.nik .post {
     border-radius: 5px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.10);
+    background-color: rgba(48, 50, 59, 0.95);
     box-shadow: -1px 1px 10px -1px rgba(0, 0, 0, 0.35);
 }
 
@@ -487,12 +497,19 @@ html.nik .single-post .post-featured-image {
     background-size: cover;
 }
 
+html.nik .single-post.post {
+    /* background-color: transparent; */
+    background-color: rgba(248, 249, 250, 0.95);
+}
+
 html.nik .single-post .post-header {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    /* background-color: rgba(248, 249, 250, 0.95); */
 }
 
 html.nik .single-post .post-content {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    /* background-color: rgba(248, 249, 250, 0.95); */
 }
 
 html.nik .single-post .post-content p {

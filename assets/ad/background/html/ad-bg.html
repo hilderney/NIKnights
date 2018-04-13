@@ -1,0 +1,36 @@
+<script>
+	var getUrl = window.location;
+	var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[0];
+	var bUrl = '';
+	(baseUrl.indexOf('localhost') > 0) ? bUrl = baseUrl + getUrl.pathname.split('/')[1] : bUrl = baseUrl;
+	jQuery(document).ready(function($) {
+		$('body').addClass('bgAdActive');
+		$('body').prepend(
+			'<style>'
+			+ 'body.bgAdActive{'
+			+ '	background-position: center top;'
+			+ '    background-size: cover;'
+			+ '    background-repeat: no-repeat;'
+			+ '    background-attachment: fixed; }'
+			+ '@media screen and (max-width: 575px) {'
+			+ '	body.bgAdActive{'
+			+ '		background-image: url("' + bUrl + '/wp-content/themes/niknights/assets/ad/background/img/bgTinySample.jpg"); } }'
+			+ '@media screen and (min-width: 576px) and (max-width: 767px) {'
+			+ '	body.bgAdActive{'
+			+ '		background-image: url("' + bUrl + '/wp-content/themes/niknights/assets/ad/background/img/bgSmallSample.jpg"); }}'
+			+ '@media screen and (min-width: 768px) and (max-width: 991px) {'
+			+ '	body.bgAdActive{'
+			+ '		background-image: url("' + bUrl + '/wp-content/themes/niknights/assets/ad/background/img/bgMediumSample.jpg"); }}'
+			+ '@media screen and (min-width: 992px) and (max-width: 1199px) {'
+			+ '	body.bgAdActive{'
+			+ '		background-image: url("' + bUrl + '/wp-content/themes/niknights/assets/ad/background/img/bgLargeSample.jpg"); }}'
+			+ '@media screen and (min-width: 1200px) and (max-width: 2599px) {'
+			+ '	body.bgAdActive{'
+			+ '		background-image: url("' + bUrl + '/wp-content/themes/niknights/assets/ad/background/img/bgExtraLargeSample.jpg"); }}'
+			+ '@media screen and (min-width: 2600px) and (max-width: 6000px) {'
+			+ '	body.bgAdActive{'
+			+ '		background-image: url("' + bUrl + '/wp-content/themes/niknights/assets/ad/background/img/bg4kSample.jpg"); }}'
+			+ '</style>'
+		);
+	});			
+</script>

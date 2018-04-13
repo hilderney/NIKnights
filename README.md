@@ -25,12 +25,13 @@ This site was created for the Nerd Ignorante [Nerd Ignorante](www.nerdignorante.
 	- Language: Brazilian Portuguese
 	- Wordpress Version: 4.9.5–pt_BR 
 	- Tags: blog, two-columns, right-sidebar, fixed-menu, custom-menu, featured-images, post-formats, podcast
-	- Pages needed: Blog, Home, Nicast, Sobre (About)
+	- Fixed Pages: Blog, Home, Nicast, Sobre (About)
 	- Fixed Category: Podcast, Notícias (News)
 	- Assets: Bootstrap, Jquery
 	- Widgets: Internal Ad support System
 - Recomendation
 	- Plugins: Blubrry from PowerPress, Compress JPEG & PNG images from TinyPNG
+	- Actions: Do NOT ERASE Pages and Categories
 
 # Versions
 - Alpha

@@ -1,7 +1,6 @@
 html.nik .nik-carousel-container {
     /* background: rgba(0,0,0,0.15); */
 }
-
 html.nik #nik_carousel {
     height: 380px;
     width: 100%;
@@ -9,7 +8,6 @@ html.nik #nik_carousel {
     margin: 0 auto;
     overflow: hidden;
 }
-
 html.nik #nik_carousel .carousel-indicators {
     position: absolute;
     right: 0;
@@ -48,8 +46,6 @@ html.nik #nik_carousel .carousel-content {
     overflow: hidden;
     border-radius: 5px;
     overflow: hidden;
-    /* background: rgba(255,255,255,0.35);
-    box-shadow: -1px 1px 10px -1px rgba(0, 0, 0, 0.35); */
 }
 
 html.nik #nik_carousel .carousel-content p {

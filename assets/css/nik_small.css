@@ -1,7 +1,6 @@
 /*  =====================================================
         Extra small devices (portrait phones, less than 576px)
     ===================================================== */
-
 @media screen and (min-width: 576px) and (max-width: 767px) {
 	/*  =====================================================
         GENERAL FUNCTIONS
@@ -23,8 +22,12 @@
 		background-size: 100vw 100vh;
 		padding-top: 80px;
 	}
-	html.nik #wpadminbar {
-		display: none;
+	html.nik body.admin-bar {
+    	margin-top: 46px !important;
+	}
+
+	html.nik body.admin-bar nav.navbar {
+	    top: 46px !important;
 	}
 	html.nik a,
 	html.nik a:visited,
@@ -163,7 +166,6 @@
 	html.nik #sidebar aside {
 		width: 354px;
 		min-height: 350px;
-		display: inline-block;
 		margin: 0 0 20px 0;
 	}
 	html.nik #sidebar .widget {
