@@ -603,6 +603,7 @@ html.nik .single-post .post-content pre {
     color: #999999;
     font-weight: 100;
     font-family: monospace;
+    white-space: normal;
 }
 
 /* 
@@ -613,7 +614,13 @@ html.nik .single-post .post-content h2,
 html.nik .single-post .post-content h3,
 html.nik .single-post .post-content h4 {
     color: #3A3C45;
+    margin: 0.85em 0;
 }
+html.nik .single-post .post-content h5,
+html.nik .single-post .post-content h6 {
+    margin: 0.85em 0;
+}
+
 
 html.nik .single-post .post-content h1 {
     font-weight: 500;

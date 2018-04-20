@@ -7,9 +7,11 @@
 		<title><?php bloginfo('name'); echo ' | '; bloginfo('description');?></title>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?> ">
 		<?php wp_head(); ?>
+		<?php //include('analyticstracking.php'); ?>
 	</head>
 	<body <?php body_class(); ?> >
 		<header>
+
 			<?php include('navbar.php'); ?>
 			<section id="ad-head-container"></section>
 		</header>

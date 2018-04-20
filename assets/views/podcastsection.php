@@ -65,7 +65,7 @@
 											<?php 
 												$quote = get_post_meta(get_the_ID(), '_author_comment', true);
 												if (strlen($quote) > 50 || $quote == '') :
-													echo '<div class="author-quote">"Nada a declarar"</div>';
+													echo '<div class="author-quote">"Estava com preguiça de escrever algo"</div>';
 												else:
 													echo '<div class="author-quote">"'.$quote.'"</div>';
 												endif;
