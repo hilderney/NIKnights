@@ -31,10 +31,12 @@ html.nik #nik_carousel .carousel-featured-image {
     background-repeat: no-repeat;
 }
 
-html.nik #nik_carousel .post-title {
-    font-size: 2rem;
+html.nik #nik_carousel .post-title{
     padding-left: 80px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+html.nik #nik_carousel .post-title .title{
+    font-size: 2rem;
     font-weight: 500;
     color: #ffffff;
 }

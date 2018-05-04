@@ -1,7 +1,7 @@
 <?php if ( have_posts() ) : the_post();  ?>
 <div id="post-<?php the_ID(); ?>">
 	<div class="sub-title hide">
-		<h2 class="cl-light">Single Post</h2>
+		<h2 class="cl-light"> Post </h2>
 	</div>
 	<div class="single-post post">
 		<div class="row">
@@ -19,7 +19,7 @@
 						</style>
 						<div>
 							<span class="post-title">
-							<?php the_title(); ?>
+								<h2 class="title"><?php the_title(); ?></h2>
 							</span>
 						</div>
 						<div class="post-category">
@@ -104,4 +104,13 @@
 	<!-- end POST LOOP -->
 	<div class="clear"></div>
 </div>
-<?php endif; ?>
+<?php 
+
+endif; 
+
+if ( comments_open() || get_comments_number() ) :
+	comments_template();
+endif;
+
+?>
+

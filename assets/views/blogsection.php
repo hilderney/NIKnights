@@ -1,7 +1,7 @@
 <?php if ( have_posts() ) : ?>
 <div id="blog-section">
 	<div class="sub-title hide">
-		<h2 class="cl-light">Blog</h2>
+		<h2 class="cl-light"> Blog </h2>
 	</div>
 	<?php while ( have_posts() ) : the_post();  ?>
 	<div class="blog-post post post-<?php the_ID(); ?>">
@@ -24,9 +24,9 @@
 			<div class="col">
 				<div class="post-content-wrapper">
 					<span class="post-title">
-					<a href="<?php the_permalink() ?>">
-					<?php the_title(); ?>	
-					</a>
+						<a href="<?php the_permalink() ?>">
+							<h2 class="title"><?php the_title(); ?></h2>	
+						</a>
 					</span>
 					<div class="post-content">
 						<div class="author-widget">

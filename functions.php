@@ -73,11 +73,13 @@
 */
 //add_theme_support('custom-background');
 //add_theme_support('custom-header');
-	add_theme_support('post-thumbnails');
+//add_theme_support( 'title-tag' );
+	add_theme_support( 'post-thumbnails');
 	add_theme_support( 'custom-logo' );
-	add_theme_support( 'html5' );
-	add_theme_support('post-formats', array('aside', 'image', 'video', 'audio'));
-
+	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
+	add_theme_support( 'comments' );
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'post-formats', array('aside', 'image', 'video', 'audio'));
 
 	/*POST TYPES*/
 
@@ -95,6 +97,14 @@
 	add_action('init', 'my_posts_types');
 
 
+
+/*
+	=====================================================
+		Comments Functions
+	=====================================================
+*/
+
+	require_once get_template_directory() . '/assets/config/createcomments.php';
 
 
 

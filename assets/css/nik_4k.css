@@ -1,7 +1,6 @@
 /*  =====================================================
         4k devices (ultra HD, 2600px and up)
     ===================================================== */
-
 @media (min-width: 2560px) {
 	/*  =====================================================
         GENERAL FUNCTIONS
@@ -212,11 +211,13 @@
 	html.nik .post p {
 		/* display:none; */
 	}
-	html.nik .post-title {
+	html.nik .post-title{
 		display: block;
 		max-height: 145px;
 		width: 100%;
 		padding: 15px;
+	}
+	html.nik .post-title .title {
 		font-size: 1.3rem;
 	}
 	html.nik .post-content {
@@ -430,7 +431,7 @@
 	html.nik .news-post a {
 		min-height: 364px;
 	}
-	html.nik .news-post .post-title {
+	html.nik .news-post .post-title .title {
 		font-size: 1.5em;
 	}
 	html.nik .news-post .float-post-content p {

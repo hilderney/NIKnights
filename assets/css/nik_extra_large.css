@@ -1,7 +1,6 @@
 /*  =====================================================
         Extra large devices (large desktops, 1200px and up)
     ===================================================== */
-
 @media (min-width: 1200px) and (max-width: 2559px) {
 	/*  =====================================================
         GENERAL FUNCTIONS
@@ -218,6 +217,8 @@
 		max-height: 145px;
 		width: 100%;
 		padding: 15px;
+	}
+	html.nik .post-title .title {
 		font-size: 1.3rem;
 	}
 	html.nik .post-content {
@@ -431,7 +432,7 @@
 	html.nik .news-post a {
 		min-height: 364px;
 	}
-	html.nik .news-post .post-title {
+	html.nik .news-post .post-title .title{
 		font-size: 1.5em;
 	}
 	html.nik .news-post .float-post-content p {

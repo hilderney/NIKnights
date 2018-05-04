@@ -5,6 +5,7 @@
 	/*  =====================================================
         GENERAL FUNCTIONS
     ===================================================== */
+	
 	html.nik {
 		margin: 0;
 		padding: 0;
@@ -264,7 +265,7 @@
 	html.nik .post p {
 		/* display:none; */
 	}
-	html.nik .post-title {
+	html.nik .post-title .title{
 		display: block;
 		max-height: 92px;
 		width: 100%;
@@ -543,7 +544,7 @@
 	html.nik .news-post a {
 		min-height: 270px;
 	}
-	html.nik .news-post .post-title {
+	html.nik .news-post .post-title .title {
 		font-size: 1.3em;
 	}
 	html.nik .news-post .float-post-content p {

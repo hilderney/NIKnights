@@ -12,7 +12,7 @@
 	if ( $podcastPosts->have_posts() ) : ?>
 <div id="podcast-section">
 	<div class="sub-title hide">
-		<h2 class="cl-light">Podcasts</h2>
+		<h2 class="cl-light"> Podcasts </h2>
 	</div>
 	<?php while ( $podcastPosts->have_posts() ) : $podcastPosts->the_post();  ?>
 	<div class="blog-post post post-<?php the_ID(); ?>">
@@ -38,7 +38,7 @@
 				<div class="post-content-wrapper">
 					<span class="post-title">
 					<a href="<?php the_permalink() ?>">
-					<?php the_title(); ?>	
+						<h2 class="title"><?php the_title(); ?></h2>
 					</a>
 					</span>
 					<div class="post-content">

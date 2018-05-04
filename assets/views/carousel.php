@@ -32,7 +32,7 @@
 </script>
 <div id="carousel">
 	<div class="section-title hide">
-		<h2 class="cl-light">Featured Slider </h2>
+		<h2 class="cl-light"> Carousel de Postagens </h2>
 	</div>
 	<div class="nik-carousel-container">
 		<div id="nik_carousel" class="carousel slide" data-ride="carousel">
@@ -42,7 +42,7 @@
 					<a href="<?php the_permalink() ?>">
 						<div class="post-<?php the_ID(); ?> carousel-featured-image bg-image">
 							<div class="post-title">
-								<?php the_title(); ?>
+								<h2 class="title"><?php the_title(); ?></h2>
 							</div>
 							<style>
 								<?php if(get_the_post_thumbnail()) : ?>

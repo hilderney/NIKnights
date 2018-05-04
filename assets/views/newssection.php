@@ -9,7 +9,7 @@
 	?>
 <div id="news-section">
 	<div class="sub-title hide">
-		<h2 class="cl-light">News Latest Post </h2>
+		<h2 class="cl-light"> Noticias mais Recentes </h2>
 	</div>
 	<?php while( $newsPosts->have_posts() ) : $newsPosts->the_post(); ?>
 	<div class="row ">
@@ -18,7 +18,7 @@
 				<a href="<?php the_permalink(); ?>">
 					<div class="news-featured-image bg-image">
 						<div class="post-title">
-							<?php the_title(); ?>
+							<h2 class="title"><?php the_title(); ?></h2>
 						</div>
 						<style>
 							<?php if(get_the_post_thumbnail()) : ?>

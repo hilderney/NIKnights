@@ -10,7 +10,7 @@
 		$featuredPosts->the_post(); ?>
 <div id="featured-posts">
 	<div class="section-title hide">
-		<h2> Header Featured </h2>
+		<h2> Podcasts </h2>
 	</div>
 	<div class="row">
 		<div class="col">
@@ -18,7 +18,7 @@
 				<a href="<?php the_permalink(); ?>">
 					<div class="single-featured-image bg-image">
 						<div class="post-title">
-							<?php the_title(); ?>
+							<h2 class="title"><?php the_title(); ?></h2>
 						</div>
 						<style>
 							<?php if(get_the_post_thumbnail()) : ?>
@@ -81,7 +81,7 @@
 							<a href="<?php the_permalink(); ?>">
 								<div class="double-featured-image bg-image">
 									<div class="post-title">
-										<?php the_title(); ?>
+										<h2 class="title"><?php the_title(); ?></h2>
 									</div>
 									<style>
 										<?php if(get_the_post_thumbnail()) : ?>
@@ -118,7 +118,7 @@
 							<a href="<?php the_permalink(); ?>">
 								<div class="double-featured-image bg-image">
 									<div class="post-title">
-										<?php the_title(); ?>
+										<h2 class="title"><?php the_title(); ?></h2>
 									</div>
 									<style>
 										<?php if(get_the_post_thumbnail()) : ?>
