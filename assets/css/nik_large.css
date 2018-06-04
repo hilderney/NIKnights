@@ -164,10 +164,10 @@
 		width: auto;
 	}
 	html.nik #site-brand {
-		height: 72px;
-		width: 72px;
+		height: 60px;
+		width: 60px;
 		position: relative;
-		top: -10px;
+		top: 0px;
 	}
 	html.nik .navbar-nav {
 		font-size: 20px;
@@ -183,7 +183,7 @@
 	    ===================================================== */
 	html.nik #main-content {
 		float: left;
-		width: 640px;
+		min-width: 640px;
 		min-height: 200px;
 	}
 	/*	=====================================================

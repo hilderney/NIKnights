@@ -40,6 +40,13 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col">
+				<?php if( $episode_content = get_the_powerpress_content() ) :
+					include('powerpresscustomniplayer.php');
+				endif ?>
+			</div>
+		</div>
 		<!-- END POST HEADER -->
 		<div class="row">
 			<div class="col">

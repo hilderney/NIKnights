@@ -7,19 +7,21 @@
 	<div class="blog-post post post-<?php the_ID(); ?>">
 		<div class="row">
 			<div class="col">
-				<div class="blog-featured-image bg-image">
-					<style>
-						<?php if(get_the_post_thumbnail()) : ?>
-						.post-<?php the_ID(); ?> .blog-featured-image {
-						background-image: url('<?php the_post_thumbnail_url(); ?>'); 
-						}
-						<?php else : ?>
-						.post-<?php the_ID(); ?> .blog-featured-image {
-						background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
-						}
-						<?php endif; ?>
-					</style>
-				</div>
+				<a href="<?php the_permalink() ?>">
+					<div class="blog-featured-image bg-image">
+						<style>
+							<?php if(get_the_post_thumbnail()) : ?>
+							.post-<?php the_ID(); ?> .blog-featured-image {
+							background-image: url('<?php the_post_thumbnail_url(); ?>'); 
+							}
+							<?php else : ?>
+							.post-<?php the_ID(); ?> .blog-featured-image {
+							background-image: url('<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg');
+							}
+							<?php endif; ?>
+						</style>
+					</div>
+				</a>
 			</div>
 			<div class="col">
 				<div class="post-content-wrapper">

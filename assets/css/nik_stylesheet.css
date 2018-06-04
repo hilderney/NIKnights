@@ -2,12 +2,12 @@
         GENERAL FUNCTIONS
     ===================================================== */
 html.nik html {
-    background-color: #3A3C45;
+    background-color: #3B444B;
 }
 
 html.nik body {
-    background-color: #3A3C45;
-    color: #E3E4E6;
+    background-color: #3B444B;
+    color: #E5E4E2;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 14px;
 }
@@ -47,7 +47,7 @@ html.nik .blog a:visited,
 html.nik .blog a:hover,
 html.nik .blog a:focus {
     text-decoration: none;
-    color: #E3E4E6;
+    color: #E5E4E2;
 }
 
 html.nik .archive a,
@@ -55,7 +55,7 @@ html.nik .archive a:visited,
 html.nik .archive a:hover,
 html.nik .archive a:focus {
     text-decoration: none;
-    color: #E3E4E6;
+    color: #E5E4E2;
 }
 
 html.nik .home a,
@@ -63,7 +63,7 @@ html.nik .home a:visited,
 html.nik .home a:hover,
 html.nik .home a:focus {
     text-decoration: none;
-    color: #E3E4E6;
+    color: #E5E4E2;
 }
 
 html.nik .page a,
@@ -71,7 +71,7 @@ html.nik .page a:visited,
 html.nik .page a:hover,
 html.nik .page a:focus {
     text-decoration: none;
-    color: #E3E4E6;
+    color: #E5E4E2;
     box-shadow: none;
 }
 
@@ -80,7 +80,7 @@ html.nik .single a:visited,
 html.nik .single a:hover,
 html.nik .single a:focus {
     text-decoration: none;
-    color: #E3E4E6;
+    color: #E5E4E2;
     box-shadow: none;
 }
 
@@ -119,23 +119,23 @@ html.nik .cl-black {
 }
 
 html.nik .cl-dark {
-    color: #303044;
+    color: #3B444B;
 }
 
 html.nik .cl-danger {
-    color: #DD2233;
+    color: #FF355E;
 }
 
 html.nik .cl-primary {
-    color: #4466AA;
+    color: #4682B4;
 }
 
 html.nik .cl-title {
-    color: #DDAA15;
+    color: #E5E4E2;
 }
 
 html.nik .cl-light {
-    color: #E3E4E6;
+    color: #E5E4E2;
 }
 
 html.nik .cl-gray {
@@ -155,23 +155,23 @@ html.nik .bg-black {
 }
 
 html.nik .bg-dark {
-    background-color: #303044;
+    background-color: #3B444B;
 }
 
 html.nik .bg-danger {
-    background-color: #DD2233;
+    background-color: #FF355E;
 }
 
 html.nik .bg-primary {
-    background-color: #4466AA;
+    background-color: #4682B4;
 }
 
 html.nik .bg-title {
-    background-color: #DDAA15;
+    background-color: #E5E4E2;
 }
 
 html.nik .bg-light {
-    background-color: #E3E4E6;
+    background-color: #E5E4E2;
 }
 
 html.nik .bg-gray {
@@ -205,13 +205,13 @@ html.nik h4 {
 html.nik h5 {
     display: block;
     font-size: 0.1em;
-    color: #4466AA;
+    color: #4682B4;
 }
 
 html.nik h6 {
     display: block;
     font-size: 0.1em;
-    color: #DDAA15;
+    color: #E5E4E2;
 }
 
 html.nik .section-title {
@@ -248,12 +248,12 @@ html.nik #sidebar .widget {
 html.nik #sidebar .widget-title {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
-    color: #DDAA15;
+    color: #E5E4E2;
     font-weight: 500;
 }
 
 html.nik #sidebar .widget-title a {
-    color: #DDAA15;
+    color: #E5E4E2;
 }
 
 html.nik #sidebar ul ul,
@@ -284,10 +284,7 @@ html.nik .brand-holder {
 
 html.nik #site-brand {
     background-color: transparent;
-    height: 72px;
-    width: 72px;
-    position: relative;
-    top: -10px;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.35);
 }
 
 html.nik .navbar-nav {
@@ -386,7 +383,7 @@ html.nik .post-category a,
 html.nik .post-category a:visited,
 html.nik .post-category a:hover {
     text-decoration: none;
-    color: #DDAA15;
+    color: #E5E4E2;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -397,13 +394,13 @@ html.nik .post .author-image {
 }
 
 html.nik .post .author-name {
-    color: #4466AA;
+    color: #4682B4;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 html.nik .post .author-twitter {
-    color: #4466AA;
+    color: #4682B4;
     font-weight: 500;
     text-transform: lowercase;
 }
@@ -439,7 +436,7 @@ html.nik .post .blog-featured-image {
 }
 
 html.nik .post .post-content-wrapper .post-content {
-    /* background-color: #E3E4E6; */
+    /* background-color: #E5E4E2; */
     overflow: hidden;
 }
 
@@ -463,7 +460,7 @@ html.nik .post-content-wrapper .post-category,
 html.nik .post-content-wrapper .post-category a,
 html.nik .post-content-wrapper .post-category a:visited,
 html.nik .post-content-wrapper .post-category a:hover {
-    color: #DDAA15;
+    color: #E5E4E2;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -494,7 +491,7 @@ html.nik #nav-pagination span.page-numbers.current {
 html.nik #nav-pagination a.page-numbers:hover,
 html.nik #nav-pagination a.prev.page-numbers:hover,
 html.nik #nav-pagination a.next.page-numbers:hover {
-    border: 1px solid #DDAA15;
+    border: 1px solid #E5E4E2;
     /* #3b7eb4; */
     color: #fff;
     background-color: rgba(0, 0, 0, 0.25);
@@ -503,7 +500,7 @@ html.nik #nav-pagination a.next.page-numbers:hover {
 html.nik #nav-pagination span.page-numbers.current {
     background: rgba(0, 0, 0, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.5);
-    color: #DDAA15;
+    color: #E5E4E2;
 }
 
 
@@ -522,12 +519,12 @@ html.nik .single-post.post {
 }
 
 html.nik .single-post .post-header {
-    /* background-color: #E3E4E6; */
+    /* background-color: #E5E4E2; */
     /* background-color: rgba(248, 249, 250, 0.95); */
 }
 
 html.nik .single-post .post-content {
-    /* background-color: #E3E4E6; */
+    /* background-color: #E5E4E2; */
     /* background-color: rgba(248, 249, 250, 0.95); */
 }
 
@@ -538,7 +535,7 @@ html.nik .single-post .post-content p {
 
 html.nik .single-post .post-category {
     text-decoration: none;
-    color: #DDAA15;
+    color: #E5E4E2;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -574,12 +571,12 @@ html.nik .single-post .quote::after {
 
 html.nik .single-post .post-content,
 html.nik .single-post .post-content p {
-    color: #3A3C45;
+    color: #3B444B;
     font-size: 1em;
 }
 
 html.nik .single-post .post-content a {
-    color: #4466AA;
+    color: #4682B4;
     font-weight: 700;
 }
 
@@ -589,12 +586,12 @@ html.nik .single-post .post-content del {
 }
 
 html.nik .single-post .post-content strong {
-    color: #3A3C45;
+    color: #3B444B;
     font-weight: 900;
 }
 
 html.nik .single-post .post-content em {
-    color: #3A3C45;
+    color: #3B444B;
     font-weight: 300;
 }
 
@@ -612,7 +609,7 @@ html.nik .single-post .post-content h1,
 html.nik .single-post .post-content h2,
 html.nik .single-post .post-content h3,
 html.nik .single-post .post-content h4 {
-    color: #3A3C45;
+    color: #3B444B;
     margin: 0.85em 0;
 }
 html.nik .single-post .post-content h5,
@@ -646,7 +643,7 @@ html.nik .single-post .post-content h5,
 html.nik .single-post .post-content h5 strong,
 html.nik .single-post .post-content h5 em,
 html.nik .single-post .post-content h5 pre {
-    color: #4466AA;
+    color: #4682B4;
     font-weight: 400;
     font-size: 1em;
 }
@@ -654,7 +651,7 @@ html.nik .single-post .post-content h5 del {
     color: rgba(66, 126, 180, 0.35);
 }
 html.nik .single-post .post-content h5 a {
-    color: #DDAA15;
+    color: #E5E4E2;
 }
 
 /* 
@@ -664,7 +661,7 @@ html.nik .single-post .post-content h6,
 html.nik .single-post .post-content h6 strong,
 html.nik .single-post .post-content h6 em,
 html.nik .single-post .post-content h6 pre {
-    color: #DDAA15;
+    color: #E5E4E2;
     font-weight: 400;
     font-size: 1em;
 }
@@ -672,7 +669,7 @@ html.nik .single-post .post-content h6 del {
     color: rgba(66, 126, 180, 0.35);
 }
 html.nik .single-post .post-content h6 a {
-    color: #4466AA;
+    color: #4682B4;
 }
 /* 
     Listas
@@ -680,7 +677,7 @@ html.nik .single-post .post-content h6 a {
 html.nik .single-post .post-content ul {
     list-style-type: disc;
     list-style-position: inside;
-    color: #3a3c45;
+    color: #3B444B;
     font-weight: 600;
 }
 html.nik .single-post .post-content ul li ul {
@@ -711,7 +708,7 @@ html.nik .single-post .post-content ol li {
 html.nik .single-post .post-content ol {
     list-style-type: decimal;
     list-style-position: inside;
-    color: #3a3c45;
+    color: #3B444B;
     font-weight: 600;
 }
 html.nik .single-post .post-content ol li ol {
@@ -807,4 +804,183 @@ html.nik #podcast-section a.img-link {
 
 html.nik #blog-section a.img-link {
     /* background-color: transparent; */
+}
+
+
+/*  =====================================================
+        COMMENTS
+    ===================================================== */
+html.nik div#comments {
+    margin: 10px;
+}
+
+
+/*  =====================================================
+        PLAYER NI
+    ===================================================== */
+html.nik .playerNI {
+    margin: 0 15px;
+}
+html.nik .powerpress_player {
+    padding: 5px 0;
+    background: rgb(34, 34, 34);
+}
+html.nik a.mejs-horizontal-volume-slider {
+    height: 36px;
+    min-height: 36px!important;
+}
+html.nik .content-powerpress-links a.download {
+    background: url(/wp-content/themes/niknights/assets/images/SVG/download.svg) no-repeat; /* Link para ícone de Download MP3 */
+    padding-left: 28px;
+}
+html.nik .content-powerpress-links a.assinar {
+    background: url(/wp-content/themes/niknights/assets/images/SVG/rss.svg) no-repeat; /* Link para ícone de assinatura */
+    padding-left: 31px;
+}
+html.nik .content-powerpress-links a.compartilhar {
+    background: url(/wp-content/themes/niknights/assets/images/SVG/share.svg) no-repeat; /* Link para ícone de compartlhamento */
+    padding-left: 31px;
+}
+html.nik .content-powerpress-links a:hover,
+html.nik .content-powerpress-links a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+html.nik .content-powerpress-links a.compartilhar:hover{
+    color: #3B444B;
+}
+html.nik .content-powerpress-links div.playerNIbutton {
+    display: inline-block;
+    width: 33.333%;
+    text-align: center;
+    padding: 13.5px 0;
+    margin-right: -4.5px;
+}
+html.nik .content-powerpress-links div.playerNIbutton:last-child {
+    margin-right: 0;
+    float: right;
+}
+html.nik .content-powerpress-links div.playerNIbutton:nth-child(1) {
+    background: #FF355E; /* MP3 */
+}
+html.nik .content-powerpress-links div.playerNIbutton:nth-child(2) {
+    background: #4682B4; /* FEED RSS */
+}
+html.nik .content-powerpress-links div.playerNIbutton:nth-child(3) {
+    background: #F5C71A; /* COMPARTILHAR */
+}
+html.nik .content-powerpress-links {
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    background: transparent;
+}
+html.nik #btn_assinarPodcast {
+    background: #4682B4; /* cor de fundo das opções de assinatura */
+    border: 10px solid #4682B4; /* cor da borda das opções de assinatura */
+}
+html.nik #btn_compartilharPodcast>span, 
+html.nik #btn_assinarPodcast>span  {
+    display: inline-block;
+    width: 33.333%;
+    text-align: center;
+    margin-left: -4.5px;
+    padding: 7px 0;
+}
+html.nik #btn_compartilharPodcast span input {
+    color: #fff;
+    background: #F5C71A;
+    padding: 0;
+}
+html.nik #btn_incorporarPodcast span {
+    display: block;
+    width: 100%;
+    background: #ad9bd5;
+    color: #F5C71A;
+}
+html.nik .dropdownItensPodcast {
+    display: none;
+    background-color: #F5C71A;
+}
+html.nik .dropdownItensPodcast span a {
+    text-transform: uppercase;
+}
+html.nik #btn_compartilharPodcast span:nth-child(1) a {
+    background: url(/wp-content/themes/niknights/assets/images/SVG/facebook.svg) no-repeat; /* Link para ícone de Facebook */
+    padding-left: 35px;
+}
+html.nik #btn_compartilharPodcast span:nth-child(2) a {
+    background: url(/wp-content/themes/niknights/assets/images/SVG/twitter.svg) no-repeat; /* Link para ícone de Twitter */
+    padding-left: 35px;
+}
+html.nik #btn_compartilharPodcast span:nth-child(3) input {
+    background: url(/wp-content/themes/niknights/assets/images/SVG/link.svg) no-repeat; /* Link para ícone de URL */
+    padding-left: 27px;
+    border: none;
+}
+html.nik #btn_assinarPodcast span.player-text,
+html.nik #btn_compartilharPodcast span.player-text {
+    font-size: 12px;
+}
+
+html.nik span.player-text {
+    color: #ffffff;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+}
+
+html.nik input[type="text"] {
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: none;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    color: rgba(0,0,0,0.6);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: normal;
+    transition: .3s ease;
+}
+
+@media all and (max-width: 1199px) {
+    /* html.nik .content-powerpress-links div.playerNIbutton:nth-child(2),.content-powerpress-links div.playerNIbutton:nth-child(5) {
+        display: none;
+    } */
+    html.nik .content-powerpress-links div.playerNIbutton {
+        width: 33.33%!important;
+    }
+    html.nik .content-powerpress-links {
+        background: transparent!important;
+    }
+    /* html.nik #btn_compartilharPodcast>span:nth-child(4) input {
+        display: none;
+    }
+    html.nik #btn_compartilharPodcast>span:last-child {
+        display: none;
+    } */
+    html.nik #btn_compartilharPodcast>span {
+        width: 32%!important;
+    }
+}
+
+@media all and (max-width: 991px) {
+    html.nik .playerNI {
+        margin: 0;
+    }
+    html.nik .content-powerpress-links a span.player-text {
+        display: none;
+    }
+    html.nik .dropdownItensPodcast span a span.player-text {
+        display: none!important;
+    }
+}
+
+@media all and (max-width: 574px) {
+    html.nik .content-powerpress-links a span.player-text {
+        display: none;
+    }
+    html.nik .dropdownItensPodcast span a span.player-text {
+        display: none!important;
+    }
 }
