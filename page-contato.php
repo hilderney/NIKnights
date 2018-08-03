@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <script> console.log('page-contato.php'); </script>
-<h1>CONTATO</h1>
 <div class=" main-container container">
 	<div class="row">
 		<div id="main-content">
@@ -8,7 +7,7 @@
 				<h2 class="cl-light">Main Content </h2>
 			</div>
 			<section >
-				<?php //include(get_template_directory().'/assets/views/singlepostsection.php'); ?>
+				<?php include(get_template_directory().'/assets/views/contactsection.php'); ?>
 			</section>
 		</div>
 		<section id="main-sidebar" class="sidebar">

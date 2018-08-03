@@ -62,6 +62,21 @@ function insert_page_sobre() {
 if( null == get_page_by_title( 'sobre' ) ) {
     add_action( 'init', 'insert_page_sobre' );
 }
+function insert_page_contato() {
+	wp_insert_post( 
+		array(
+			'post_title'		=> 'Contato'
+			, 'post-name'		=> 'Contato'				
+			, 'post_content'	=> ''
+			, 'post_status'		=> 'publish'
+			, 'post_author'		=> 1
+			, 'post_type'		=> 'page'
+		)
+	);
+}
+if( null == get_page_by_title( 'contato' ) ) {
+    add_action( 'init', 'insert_page_contato' );
+}
 
 
 /*

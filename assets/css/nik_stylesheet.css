@@ -146,6 +146,10 @@ html.nik .cl-darkgray {
     color: #555555;
 }
 
+html.nik .cl-highlight {
+    color: #F5C71A;
+}
+
 html.nik .bg-white {
     background-color: #FFFFFFF;
 }
@@ -180,6 +184,10 @@ html.nik .bg-gray {
 
 html.nik .bg-darkgray {
     background-color: #555555;
+}
+
+html.nik .bg-highlight {
+    background-color: #F5C71A;
 }
 
 html.nik h1 {
@@ -219,6 +227,10 @@ html.nik .section-title {
     padding: 6px 10px;
     color: #888888;
     border-radius: 5px;
+}
+
+html.nik .input:invalid {
+    background-color: #FF355E;
 }
 
 
@@ -853,7 +865,7 @@ html.nik .content-powerpress-links div.playerNIbutton {
     display: inline-block;
     width: 33.333%;
     text-align: center;
-    padding: 13.5px 0;
+    padding: 1.3em 0;
     margin-right: -4.5px;
 }
 html.nik .content-powerpress-links div.playerNIbutton:last-child {

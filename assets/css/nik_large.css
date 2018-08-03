@@ -328,7 +328,8 @@
 	/*  =====================================================
 	        SINGLE POSTS
 	    ===================================================== */
-	html.nik .single-post .post-featured-image {
+	html.nik .single-post .post-featured-image
+	, html.nik .single-post .single-post.post>.row:first-child {
 		min-height: 270px;
 		max-height: 270px;
 	}

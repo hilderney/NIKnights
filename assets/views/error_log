@@ -1,0 +1,8 @@
+[12-Jul-2018 19:59:44 America/Chicago] PHP Fatal error:  Call to undefined function get_the_powerpress_content() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/views/powerpresscustomniplayer.php on line 26
+[13-Jul-2018 01:10:30 America/Chicago] PHP Fatal error:  Call to undefined function have_posts() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/views/singlepostsection.php on line 1
+[13-Jul-2018 01:11:01 America/Chicago] PHP Fatal error:  Class 'WP_Query' not found in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/views/carousel.php on line 7
+[13-Jul-2018 01:20:19 America/Chicago] PHP Fatal error:  Call to undefined function get_category_by_slug() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/views/featuredsection.php on line 2
+[13-Jul-2018 01:31:26 America/Chicago] PHP Fatal error:  Call to undefined function have_posts() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/views/blogsection.php on line 1
+[13-Jul-2018 01:59:12 America/Chicago] PHP Fatal error:  Class 'WP_Query' not found in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/views/newssection.php on line 7
+[13-Jul-2018 02:25:46 America/Chicago] PHP Fatal error:  Call to undefined function get_category_by_slug() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/views/featuredpodcastsection.php on line 2
+[13-Jul-2018 02:44:55 America/Chicago] PHP Fatal error:  Call to undefined function is_front_page() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/views/podcastsection.php on line 2

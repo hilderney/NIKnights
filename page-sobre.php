@@ -8,7 +8,7 @@
 				<h2 class="cl-light">Main Content </h2>
 			</div>
 			<section >
-				<?php //include(get_template_directory().'/assets/views/singlepostsection.php'); ?>
+				<?php include(get_template_directory().'/assets/views/aboutsection.php'); ?>
 			</section>
 		</div>
 		<section id="main-sidebar" class="sidebar">

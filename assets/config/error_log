@@ -1,0 +1,7 @@
+[04-Jul-2018 04:36:42 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/config/metabox.php on line 3
+[04-Jul-2018 11:41:28 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/config/createcustomwidgets.php on line 7
+[04-Jul-2018 22:05:29 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/config/loadingfiles.php on line 29
+[04-Jul-2018 23:23:22 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/config/createsidebars.php on line 77
+[05-Jul-2018 00:55:53 America/Chicago] PHP Fatal error:  Class 'Walker_Nav_Menu' not found in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/config/class-wp-bootstrap-navwalker.php on line 27
+[05-Jul-2018 01:03:37 America/Chicago] PHP Fatal error:  Call to undefined function get_page_by_title() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/config/createpages.php on line 17
+[05-Jul-2018 01:25:28 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/nerdignorante/public_html/wp-content/themes/niknights/assets/config/createcategories.php on line 13
