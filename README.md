@@ -39,7 +39,8 @@ This site was created for the Nerd Ignorante [Nerd Ignorante](www.nerdignorante.
 - Beta
 	- 0.8 Raw Meat
 		- Ad System in progress
-		- Comments not working
+		- Comments working with Disqus
+		- js msg function working
 		- Still Testing
 - Release
 	- 1.0 Steak
