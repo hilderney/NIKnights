@@ -23,7 +23,9 @@ function nik_script_enqueue(){
 	wp_enqueue_style( 'ad' );
 
 	wp_register_script('jquery', get_template_directory_uri() . '/assets/js/bootstrap.min.js', 'jquery');
+	wp_register_script('app', get_template_directory_uri() . '/assets/js/app.min.js', 'app');
 	wp_enqueue_script('jquery');
+	wp_enqueue_script('app');
 
 }
 add_action( 'init', 'nik_script_enqueue'/*, $priority, $accepted_args */);

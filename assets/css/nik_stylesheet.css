@@ -828,6 +828,25 @@ html.nik div#comments {
 
 
 /*  =====================================================
+        ANIMATIONS
+    ===================================================== */
+html.nik .fade {
+    -webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+    z-index: 1050;
+}
+
+html.nik .fade.in {
+    opacity: 1;
+}
+
+html.nik .fade.out {
+    opacity: 0;
+}
+
+
+
+/*  =====================================================
         PLAYER NI
     ===================================================== */
 html.nik .playerNI {

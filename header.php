@@ -12,6 +12,7 @@
 		<?php include('analyticstracking.php') ?>
 	</head>
 	<body <?php body_class(); ?> >
+		<div id="nikMessage" class="fade" style=" z-index: 1050; width:0; height: 0; "></div>
 		<header>
 
 			<?php include('navbar.php'); ?>

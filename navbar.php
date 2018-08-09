@@ -10,10 +10,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li>
-          <a class="navbar-brand-name" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo('name'); ?>">
-          <?php echo bloginfo('name'); ?>
+        <!-- <li>
+          <a class="navbar-brand-name" href="<?php //bloginfo( 'url' ); ?>" title="<?php //bloginfo('name'); ?>">
+          <?php //echo bloginfo('name'); ?>
           </a>
+        </li> -->
+        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-sobre" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sobre nav-item">
+          <a class="nav-link" href="<?= bloginfo( 'url' ).'/sobre' ?>" title="Sobre"> Sobre </a>
         </li>
         <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-podcast" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-podcast nav-item">
           <a class="nav-link" href="<?= bloginfo( 'url' ).'/nicast' ?>" title="Nicast"> Nicast </a>
@@ -33,6 +36,9 @@
             'walker'      => new WP_Bootstrap_Navwalker()
             ) );
           ?>
+        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-contato" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-contato nav-item">
+          <a class="nav-link" href="<?= bloginfo( 'url' ).'/contato' ?>" title="Contato"> Contato </a>
+        </li>
       </ul>
     </div>
   </div>
