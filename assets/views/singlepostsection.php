@@ -7,6 +7,18 @@
 		<div class="row">
 			<div class="col">
 				<div class="post-header">
+
+
+					<div class="post-share-img-holder d-none">
+						<?php if(get_the_post_thumbnail()) : ?>
+							<img class="post-share-img d-none" src="<?php  the_post_thumbnail_url(); ?>" alt="Post Header Image">
+						<?php else : ?>
+							<img class="post-share-img" src="<?php bloginfo('template_url') ?>/assets/images/postbackgroundsample.jpg" alt="Default-Image">
+						<?php endif; ?>
+						
+					</div>
+					
+
 					<div class="post-featured-image bg-image">
 						<style>
 							<?php if(get_the_post_thumbnail()) : ?>
@@ -42,9 +54,9 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<?php if( $episode_content = get_the_powerpress_content() ) :
-					include('powerpresscustomniplayer.php');
-				endif ?>
+				<div class="playerNI">
+					<?php include('powerpresscustomniplayer.php'); ?>
+				</div>
 			</div>
 		</div>
 		<!-- END POST HEADER -->
