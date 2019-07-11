@@ -367,6 +367,8 @@ html.nik .post p {
     /* display:none; */
 }
 
+html.nik .post 
+
 html.nik .post-title {
     overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -524,6 +526,16 @@ html.nik .single-post .post-featured-image {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+html.nik .single-post .post-share-img-holder {
+    width: 1px !important;
+    height: 0px !important;
+    opacity: 0.001;
+    overflow: hidden;
+}
+
 
 html.nik .single-post.post {
     /* background-color: transparent; */

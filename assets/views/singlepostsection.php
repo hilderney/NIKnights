@@ -9,7 +9,7 @@
 				<div class="post-header">
 
 
-					<div class="post-share-img-holder d-none">
+					<div class="post-share-img-holder">
 						<?php if(get_the_post_thumbnail()) : ?>
 							<img class="post-share-img d-none" src="<?php  the_post_thumbnail_url(); ?>" alt="Post Header Image">
 						<?php else : ?>
